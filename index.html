@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ブラックフライデー｜人とペットのサプリ専門店モノリス</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f8f2e7;
+  --paper:#fffbf4;
+  --outer:#ece2d1;
+  --ink:#2a2826;
+  --sub:#5f5953;
+  --teal:#2f7f86;
+  --teal-d:#1f5f66;
+  --teal-l:#d7ecea;
+  --salmon:#ec9a8c;
+  --salmon-l:#fbe3dc;
+  --orange:#f2a23a;
+  --butter:#ffe08a;
+  --red:#d6362b;
+  --line:#e3d6c2;
+  --w:700px;
+  --en:"Jost",sans-serif;
+  --jp:"Noto Sans JP",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--outer);color:var(--ink);font-family:var(--jp);font-size:16px;line-height:1.75;letter-spacing:.05em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.page{max-width:var(--w);margin:0 auto;background:var(--cream);overflow:hidden;position:relative}
+.en{font-family:var(--en)}
+.num{font-family:var(--en);font-weight:700;letter-spacing:0;line-height:1}
+.inner{padding:0 20px}
+
+/* ---- 確認用帯 ---- */
+.draft{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 10px;letter-spacing:.08em}
+
+/* ---- header ---- */
+.hd{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:var(--paper);border-bottom:1px solid var(--line)}
+.hd .logo{font-family:var(--en);font-weight:600;font-size:20px;letter-spacing:.32em}
+.hd small{display:block;font-size:11px;letter-spacing:.08em;color:var(--sub)}
+.hd a.top{font-size:12px;color:var(--teal-d);font-weight:700;border-bottom:1px solid currentColor}
+
+/* ---- tape marquee ---- */
+.tape{background:var(--teal);color:#fff;overflow:hidden;white-space:nowrap;font-family:var(--en);font-weight:600;font-size:15px;letter-spacing:.2em;padding:9px 0}
+.tape .run{display:inline-block;animation:run 28s linear infinite}
+.tape span{margin:0 18px}
+.tape i{display:inline-block;width:14px;height:14px;vertical-align:-1px;background:currentColor;-webkit-mask:var(--paw) center/contain no-repeat;mask:var(--paw) center/contain no-repeat}
+@keyframes run{to{transform:translateX(-50%)}}
+:root{--paw:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cellipse cx='32' cy='44' rx='15' ry='12'/%3E%3Cellipse cx='14' cy='27' rx='6.5' ry='8.5'/%3E%3Cellipse cx='25' cy='14' rx='6.5' ry='8.5'/%3E%3Cellipse cx='39' cy='14' rx='6.5' ry='8.5'/%3E%3Cellipse cx='50' cy='27' rx='6.5' ry='8.5'/%3E%3C/svg%3E")}
+
+/* ---- FV ---- */
+.fv{position:relative;padding:34px 20px 30px;background:var(--cream)}
+.fv-kicker{font-family:var(--en);font-weight:600;font-size:14px;letter-spacing:.3em;color:var(--teal-d)}
+.fv-title{font-family:var(--en);font-weight:700;line-height:.86;letter-spacing:-.01em;margin-top:10px;font-size:min(23vw,158px)}
+.fv-title .l1{display:block;color:var(--ink)}
+.fv-title .l2{display:block;color:var(--teal);padding-left:.1em}
+.fv-catch{margin-top:22px;font-weight:700;font-size:min(7.4vw,40px);line-height:1.4;letter-spacing:.04em}
+.fv-catch em{font-style:normal;background:linear-gradient(transparent 62%,var(--butter) 62%)}
+.fv-date{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-top:16px;font-family:var(--en);font-weight:600;font-size:min(5.2vw,30px);letter-spacing:.02em}
+.fv-date b{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--teal);color:#fff;font-family:var(--jp);font-size:13px;font-weight:700;line-height:1;margin:0 6px 0 3px;vertical-align:5px}
+.fv-date .arr{width:26px;height:2px;background:var(--ink);position:relative}
+.fv-date .arr:after{content:"";position:absolute;right:0;top:-4px;border:5px solid transparent;border-left:8px solid var(--ink);border-right:0}
+.fv-photos{position:relative;margin:26px -4px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.fv-photos a{display:block;aspect-ratio:1/1;border-radius:14px;overflow:hidden;background:#fff;transition:transform .3s}
+.fv-photos a:nth-child(even){transform:translateY(18px)}
+.fv-photos a:hover{transform:translateY(-4px)}
+.fv-photos a:nth-child(even):hover{transform:translateY(14px)}
+.fv-3{display:grid;grid-template-columns:repeat(3,1fr);margin-top:42px;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.fv-3 a{padding:14px 8px 12px;text-align:center;border-left:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}
+.fv-3 a:first-child{border-left:0}
+.fv-3 small{display:block;font-size:12px;font-weight:700;line-height:1.4;color:var(--sub);letter-spacing:.02em}
+.fv-3 .big{display:block;margin-top:4px;color:var(--red);font-family:var(--en);font-weight:700;font-size:min(8.4vw,46px);line-height:1;letter-spacing:-.02em;white-space:nowrap}
+.fv-3 .big u{text-decoration:none;font-family:var(--jp);font-size:.42em;margin-left:1px}
+.fv-3 .big.t{color:var(--teal-d)}
+
+/* ---- countdown ---- */
+.cd{background:var(--teal);color:#fff;text-align:center;padding:18px 16px 20px}
+.cd-lbl{font-size:14px;font-weight:700;letter-spacing:.12em}
+.cd-num{display:flex;justify-content:center;align-items:baseline;gap:6px;margin-top:4px}
+.cd-num .num{font-size:min(12vw,62px);font-variant-numeric:tabular-nums}
+.cd-num small{font-size:14px;font-weight:700;margin-right:6px}
+
+/* ---- section base ---- */
+.sec{padding:64px 0}
+.sec-no{font-family:var(--en);font-weight:600;font-size:14px;letter-spacing:.3em;color:var(--teal-d)}
+.sec-no:before{content:"";display:inline-block;width:28px;height:2px;background:currentColor;vertical-align:4px;margin-right:10px}
+.h2{font-weight:700;font-size:min(7.6vw,38px);line-height:1.45;letter-spacing:.03em;margin-top:10px}
+.lead{margin-top:14px;font-size:16px;color:var(--sub)}
+.note{font-size:12.5px;color:var(--sub);line-height:1.75;margin-top:18px}
+.note p{padding-left:1em;text-indent:-1em}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--red);color:#fff;font-weight:700;font-size:16px;border-radius:999px;padding:14px 18px;transition:filter .2s,transform .2s}
+.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn:after{content:"";width:8px;height:8px;border-top:2px solid currentColor;border-right:2px solid currentColor;transform:rotate(45deg)}
+.btn.teal{background:var(--teal)}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn.off{background:#bdb4a8;pointer-events:none}
+.btn.off:after{display:none}
+
+/* ---- calendar ---- */
+.cal{background:var(--paper)}
+.cal-list{margin-top:28px;border-top:2px solid var(--ink)}
+.day{display:grid;grid-template-columns:78px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);align-items:center;position:relative}
+.day .d{font-family:var(--en);font-weight:700;font-size:30px;line-height:1;letter-spacing:-.01em}
+.day .d small{display:block;font-family:var(--jp);font-size:12px;font-weight:700;color:var(--sub);margin-top:4px;letter-spacing:.06em}
+.day .chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:13px;font-weight:700;line-height:1.3;padding:5px 9px;border-radius:6px;background:var(--cream);border:1px solid var(--line)}
+.chip.sale{background:var(--teal-l);border-color:transparent;color:var(--teal-d)}
+.chip.sd{background:var(--ink);color:#fff;border-color:var(--ink)}
+.chip.new{background:var(--salmon-l);border-color:transparent;color:#a3402f}
+.chip.mat{background:var(--butter);border-color:transparent}
+.chip.pt{background:var(--red);color:#fff;border-color:var(--red)}
+.day.best{background:linear-gradient(90deg,#fff2c8,transparent)}
+.day.best .d{color:var(--red)}
+.day .best-tag{grid-column:2;font-size:13px;font-weight:700;color:var(--red);margin-top:-4px}
+.day.now:before{content:"いまここ";position:absolute;left:-2px;top:-10px;background:var(--red);color:#fff;font-size:11px;font-weight:700;padding:1px 8px;border-radius:4px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:14px;font-size:12.5px;color:var(--sub)}
+
+/* ---- trial 580 ---- */
+.trial{background:var(--salmon-l);position:relative}
+.trial-box{position:relative;margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center}
+.trial-img{position:relative;border-radius:18px;overflow:hidden;background:#fff;aspect-ratio:1/1}
+.trial-price .was{font-size:15px;color:var(--sub);font-weight:700}
+.trial-price .was s{font-family:var(--en);font-size:20px;margin-left:4px}
+.trial-price .now{color:var(--red);font-family:var(--en);font-weight:700;font-size:min(22vw,118px);line-height:.95;letter-spacing:-.03em;margin-top:2px}
+.trial-price .now u{text-decoration:none;font-family:var(--jp);font-size:.26em;letter-spacing:0;margin-left:2px}
+.trial-price .tax{font-size:12px;color:var(--sub)}
+.stamp{position:absolute;right:-8px;top:-14px;width:118px;height:118px;border-radius:50%;border:3px solid var(--red);color:var(--red);display:grid;place-items:center;text-align:center;background:rgba(255,251,244,.88);opacity:0;transform:scale(1.8)}
+.stamp.on{animation:stamp .45s cubic-bezier(.3,1.6,.5,1) forwards}
+.stamp i{position:absolute;inset:8px;border:1px dashed var(--red);border-radius:50%}
+.stamp b{display:block;font-family:var(--en);font-size:30px;line-height:1}
+.stamp small{display:block;font-size:12px;font-weight:700;line-height:1.3}
+@keyframes stamp{60%{opacity:1;transform:scale(.92)}100%{opacity:1;transform:scale(1)}}
+.trial-in{margin-top:22px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center}
+.trial-in div{background:var(--paper);border-radius:10px;padding:10px 4px;font-size:13px;font-weight:700;line-height:1.35}
+.trial-in div small{display:block;font-family:var(--en);font-size:15px;color:var(--teal-d)}
+.gift{margin-top:22px;background:var(--paper);border:2px dashed var(--red);border-radius:14px;padding:18px 18px;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center}
+.gift .num{color:var(--red);font-size:54px}
+.gift .num u{text-decoration:none;font-size:.45em}
+.gift p{font-weight:700;font-size:16px;line-height:1.55}
+.gift p small{display:block;font-weight:400;font-size:13px;color:var(--sub)}
+
+/* ---- coupons ---- */
+.cp{background:var(--cream)}
+.dash{margin-top:28px;background:var(--ink);color:#fff;border-radius:18px;padding:24px 22px;position:relative;overflow:hidden}
+.dash-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.dash .lbl{font-size:14px;font-weight:700;color:var(--butter);letter-spacing:.1em}
+.dash .when{font-family:var(--en);font-weight:600;font-size:22px;letter-spacing:.02em;margin-top:2px}
+.dash .left{text-align:center;border:1px solid rgba(255,255,255,.4);border-radius:10px;padding:6px 10px;font-size:12px;line-height:1.3;font-weight:700;flex-shrink:0}
+.dash .left b{display:block;font-family:var(--en);font-size:26px;color:var(--butter)}
+.dash .big{display:flex;align-items:baseline;gap:10px;margin-top:14px;flex-wrap:wrap}
+.dash .big span{font-size:18px;font-weight:700}
+.dash .big .num{font-size:min(20vw,104px);color:var(--butter)}
+.dash .big .num u{text-decoration:none;font-size:.36em;font-family:var(--jp)}
+.dash .btn{margin-top:16px;background:var(--butter);color:var(--ink)}
+.tickets{margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tk{position:relative;background:var(--paper);border:1.5px solid var(--line);border-radius:12px;padding:16px 14px 14px;--hole:var(--cream)}
+.tk:before,.tk:after{content:"";position:absolute;top:58%;width:16px;height:16px;border-radius:50%;background:var(--hole);border:1.5px solid var(--line)}
+.tk:before{left:-9px;clip-path:inset(0 0 0 50%)}
+.tk:after{right:-9px;clip-path:inset(0 50% 0 0)}
+.tk .cond{font-size:13px;font-weight:700;color:var(--sub);line-height:1.4}
+.tk .off{font-family:var(--en);font-weight:700;color:var(--red);font-size:min(9.4vw,42px);line-height:1.05;margin-top:4px;letter-spacing:-.01em}
+.tk .off u{text-decoration:none;font-family:var(--jp);font-size:.4em;letter-spacing:0}
+.tk .tbd{color:#b0a596;font-family:var(--jp);font-size:22px;padding:6px 0 4px}
+.tk hr{border:0;border-top:1.5px dashed var(--line);margin:12px -4px 10px}
+.tk a,.tk span.get{display:block;text-align:center;font-size:13px;font-weight:700;color:var(--teal-d)}
+.tk span.get{color:#b0a596}
+.tk.wide{grid-column:1/-1;background:var(--salmon-l);border-color:transparent;--hole:var(--cream)}
+.tk.wide:before,.tk.wide:after{border-color:transparent}
+.tk-h{display:flex;align-items:baseline;justify-content:space-between;margin-top:40px;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:8px}
+.tk-h h3{font-size:21px;font-weight:700;line-height:1.4}
+.tk-h b{color:var(--red);font-family:var(--en);font-size:30px;white-space:nowrap}
+.tk-h b u{text-decoration:none;font-family:var(--jp);font-size:14px}
+
+/* ---- stack (まとめ買い & P5) ---- */
+.stack{background:var(--teal);color:#fff}
+.stack .sec-no{color:var(--butter)}
+.stack .lead{color:#e3f1ef}
+.stack-days{display:flex;gap:10px;margin-top:22px}
+.stack-days div{flex:1;background:rgba(255,255,255,.12);border-radius:12px;padding:12px 10px;text-align:center}
+.stack-days .num{font-size:34px}
+.stack-days small{display:block;font-size:12.5px;font-weight:700;line-height:1.45;margin-top:4px}
+.ladder{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ladder div{background:var(--paper);color:var(--ink);border-radius:14px;padding:18px 14px;text-align:center}
+.ladder .cnt{font-weight:700;font-size:16px}
+.ladder .cnt b{font-family:var(--en);font-size:34px;margin:0 2px;color:var(--teal-d)}
+.ladder .pct{font-family:var(--en);font-weight:700;color:var(--red);font-size:min(13vw,64px);line-height:1;margin-top:4px}
+.ladder .pct u{text-decoration:none;font-size:.36em}
+.p5{margin-top:12px;background:var(--butter);color:var(--ink);border-radius:14px;padding:18px 18px;display:flex;align-items:center;justify-content:center;gap:16px}
+.p5 .t{font-weight:700;font-size:18px;line-height:1.35}
+.p5 .num{font-size:min(19vw,96px);color:var(--red)}
+.p5 .num u{text-decoration:none;font-family:var(--jp);font-size:.34em}
+
+/* ---- products ---- */
+.star{background:var(--paper)}
+.offbig{display:flex;align-items:flex-end;gap:12px;margin-top:12px}
+.offbig .num{font-size:min(30vw,170px);color:var(--red);letter-spacing:-.04em;line-height:.82}
+.offbig .num u{text-decoration:none;font-size:.4em;letter-spacing:0}
+.offbig p{font-weight:700;font-size:18px;line-height:1.45;padding-bottom:6px}
+.prod{margin-top:30px;display:grid;grid-template-columns:200px 1fr;grid-template-rows:auto 1fr;gap:0 20px;padding-top:30px;border-top:1px solid var(--line)}
+.prod:first-of-type{border-top:2px solid var(--ink)}
+.prod-img{grid-row:1/3;display:block;border-radius:14px;overflow:hidden;aspect-ratio:1/1;background:#fff}
+.prod .cat{font-size:12.5px;font-weight:700;color:var(--teal-d);letter-spacing:.1em}
+.prod h3{font-size:24px;font-weight:700;line-height:1.35;margin-top:2px}
+.prod .tag{font-size:14px;color:var(--sub);margin-top:4px;line-height:1.6}
+.sizes{margin-top:14px;display:grid;gap:8px}
+.size{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;border:1.5px solid var(--line);border-radius:12px;padding:10px 12px 10px 14px;background:var(--paper);transition:border-color .2s,background .2s}
+.size:hover{border-color:var(--red);background:#fff}
+.size .sz{font-weight:700;font-size:15px;line-height:1.3;min-width:3.6em}
+.size .pr{text-align:right;line-height:1.1}
+.size .pr s{display:block;font-family:var(--en);font-size:13px;color:var(--sub)}
+.size .pr b{font-family:var(--en);font-weight:700;font-size:28px;color:var(--red);letter-spacing:-.01em}
+.size .pr b u{text-decoration:none;font-family:var(--jp);font-size:12px;margin-left:1px}
+.size .go{width:30px;height:30px;border-radius:50%;background:var(--red);position:relative}
+.size .go:after{content:"";position:absolute;left:9px;top:11px;width:7px;height:7px;border-top:2px solid #fff;border-right:2px solid #fff;transform:rotate(45deg)}
+.size .badge{font-size:11px;font-weight:700;background:var(--red);color:#fff;border-radius:4px;padding:1px 6px;margin-left:6px;vertical-align:2px;font-family:var(--en);letter-spacing:.02em}
+.size.nosale .pr b{color:var(--ink)}
+.size.nosale .go{background:var(--ink)}
+
+/* ---- half 50 ---- */
+.half{background:var(--butter);color:var(--ink);position:relative}
+.half .sec-no{color:var(--ink)}
+.half .lead{color:var(--ink)}
+.half-head{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;align-items:end;margin-top:8px}
+.half-head .num{font-size:min(40vw,230px);color:var(--red);letter-spacing:-.05em;line-height:.8}
+.half-head .num u{text-decoration:none;font-size:.32em;letter-spacing:0}
+.half-head p{font-weight:700;font-size:min(6vw,28px);line-height:1.35;padding-bottom:8px}
+.hgrid{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.hcard{background:var(--paper);color:var(--ink);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s}
+.hcard:hover{transform:translateY(-3px)}
+.hcard .im{aspect-ratio:1/1;background:#fff;position:relative}
+.hcard .who{position:absolute;left:8px;top:8px;font-size:12px;font-weight:700;padding:2px 8px;border-radius:4px;background:var(--teal);color:#fff}
+.hcard .who.hu{background:var(--salmon);color:var(--ink)}
+.hcard .bd{padding:12px 12px 14px;display:flex;flex-direction:column;flex:1}
+.hcard h3{font-size:16px;font-weight:700;line-height:1.45}
+.hcard .tg{font-size:12.5px;color:var(--sub);line-height:1.5;margin-top:2px}
+.hcard .pr{margin-top:auto;padding-top:10px;line-height:1.1}
+.hcard .pr s{font-family:var(--en);font-size:13px;color:var(--sub)}
+.hcard .pr b{display:block;font-family:var(--en);font-weight:700;color:var(--red);font-size:min(8.4vw,36px);letter-spacing:-.01em}
+.hcard .pr b u{text-decoration:none;font-family:var(--jp);font-size:12px}
+.hcard .cta{margin-top:10px;background:var(--red);color:#fff;text-align:center;border-radius:999px;font-weight:700;font-size:14px;padding:9px 6px}
+
+/* ---- main 10 ---- */
+.main{background:var(--cream)}
+.mgrid{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mgrid .hcard{border:1.5px solid var(--line)}
+.hcard .pct{position:absolute;right:8px;top:8px;background:var(--red);color:#fff;font-family:var(--en);font-weight:700;font-size:15px;padding:2px 8px;border-radius:4px}
+.hcard.ns .pr b{color:var(--ink)}
+.hcard.ns .cta{background:var(--ink)}
+.hcard.ns .pct{background:var(--ink);font-family:var(--jp);font-size:12px}
+
+/* ---- food ---- */
+.food{background:var(--paper)}
+.fgrid{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fb{border:2px solid var(--ink);border-radius:16px;padding:18px 16px 16px;display:flex;flex-direction:column;gap:6px;transition:background .2s}
+.fb:hover{background:#fff}
+.fb .bn{font-family:var(--en);font-weight:700;font-size:26px;letter-spacing:.08em;line-height:1.1}
+.fb .kn{font-size:12.5px;color:var(--sub);font-weight:700}
+.fb .v{margin-top:auto;padding-top:8px;font-family:var(--en);font-weight:700;font-size:min(10vw,46px);color:var(--red);line-height:1}
+.fb .v u{text-decoration:none;font-family:var(--jp);font-size:.36em}
+.fb .v.pt{color:var(--teal-d)}
+.fb .lk{font-size:13px;font-weight:700;border-top:1px solid var(--line);padding-top:8px;margin-top:6px}
+.fb .lk:after{content:" ›"}
+.fb.dbl{grid-column:1/-1;flex-direction:row;align-items:center;justify-content:space-between;background:var(--teal-l);border-color:transparent}
+.fb.dbl .v{margin:0;padding:0}
+
+/* ---- foot ---- */
+.notes{padding:40px 20px 30px;background:var(--cream);border-top:1px solid var(--line)}
+.thanks{overflow:hidden;white-space:nowrap;background:var(--cream);padding:10px 0 26px}
+.thanks .run{display:inline-block;font-family:var(--en);font-weight:700;font-size:min(20vw,120px);color:var(--teal);line-height:1;animation:run 30s linear infinite;letter-spacing:.02em}
+.thanks .run span{margin-right:.4em}
+.thanks .run i{color:var(--salmon);font-style:normal;margin-right:.4em}
+.ft{background:var(--teal-d);color:#fff;text-align:center;padding:26px 20px 30px}
+.ft .logo{font-family:var(--en);font-weight:600;font-size:22px;letter-spacing:.32em}
+.ft small{display:block;font-size:12px;opacity:.85}
+.ft .btn{margin:18px auto 0;max-width:340px;background:#fff;color:var(--teal-d)}
+
+/* ---- side rails (PC) ---- */
+.rail{display:none}
+@media (min-width:1240px){
+  .rail{display:block;position:fixed;top:50%;transform:translateY(-50%);width:200px;z-index:20}
+  .rail.l{left:calc(50% - 350px - 240px)}
+  .rail.r{right:calc(50% - 350px - 240px)}
+  .rail nav a{display:flex;justify-content:space-between;padding:12px 4px;border-bottom:1px solid #d3c6b0;font-size:14px;font-weight:700}
+  .rail nav a span{font-family:var(--en);color:var(--teal-d);font-size:13px}
+  .rail nav a:hover{color:var(--red)}
+  .rail .mini{display:block;background:var(--paper);border-radius:16px;overflow:hidden;text-align:center;padding-bottom:14px;border:2px solid var(--red)}
+  .rail .mini img{aspect-ratio:1/1;width:100%}
+  .rail .mini b{display:block;color:var(--red);font-family:var(--en);font-size:44px;line-height:1;margin-top:8px}
+  .rail .mini b u{text-decoration:none;font-family:var(--jp);font-size:14px}
+  .rail .mini small{font-size:13px;font-weight:700}
+  .rail .rcd{margin-top:14px;text-align:center;font-size:13px;font-weight:700;color:var(--teal-d)}
+}
+
+/* ---- SP ---- */
+@media (max-width:599px){
+  .fv{padding-top:26px}
+  .fv-photos{gap:6px}
+  .fv-photos a{border-radius:10px}
+  .trial-box{grid-template-columns:1fr}
+  .trial-img{max-width:300px;margin:0 auto;width:100%}
+  .trial-price{text-align:center}
+  .stamp{right:0;top:-10px;width:104px;height:104px}
+  .trial-in{grid-template-columns:repeat(2,1fr)}
+  .prod{grid-template-columns:128px 1fr;grid-template-rows:auto;gap:0 14px;align-items:center}
+  .prod-img{grid-row:auto}
+  .prod .sizes{grid-column:1/-1}
+  .prod h3{font-size:21px}
+  .tk-h h3{font-size:18px}
+  .ladder .cnt b{font-size:28px}
+  .p5{flex-direction:column;gap:2px;text-align:center}
+  .fb.dbl{flex-direction:column;align-items:flex-start}
+  .day{grid-template-columns:64px 1fr}
+  .day .d{font-size:26px}
+  .sp-only{display:inline}
+}
+@media (min-width:600px){.sp-only{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.tape .run,.thanks .run{animation:none}.rv{opacity:1;transform:none}.stamp{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- PC 両脇 -->
+<aside class="rail l" aria-label="ページ内メニュー">
+  <nav>
+    <a href="#calendar">おトクカレンダー<span>CAL</span></a>
+    <a href="#trial">お試しセット580円<span>01</span></a>
+    <a href="#coupon">クーポン<span>02</span></a>
+    <a href="#matome">まとめ買い・P5倍<span>03</span></a>
+    <a href="#star">スター商品10%OFF<span>04</span></a>
+    <a href="#half">50%OFF<span>05</span></a>
+    <a href="#main">メインサプリ10%OFF<span>06</span></a>
+    <a href="#food">フード<span>07</span></a>
+  </nav>
+</aside>
+<aside class="rail r" aria-label="お試しセット">
+  <a class="mini" href="https://item.rakuten.co.jp/cordy/cordy-set/">
+    <img src="https://shop.r10s.jp/cordy/cabinet/item_img/sam/nml/trial-sum.jpg" alt="ペット用サプリお試し4点セット">
+    <b>580<u>円</u></b>
+    <small>お試し4点セット</small>
+  </a>
+  <p class="rcd" data-cd-mini></p>
+</aside>
+
+<div class="page" id="top">
+  <div class="draft">確認用ページです（クーポン条件・URLは仮）</div>
+
+  <header class="hd">
+    <div><span class="logo">MONOLITH</span><small>人とペットのサプリ専門店モノリス</small></div>
+    <a class="top" href="https://www.rakuten.co.jp/cordy/">ショップトップ</a>
+  </header>
+
+  <div class="tape" aria-hidden="true"><div class="run" data-dup>
+    <span>BLACK FRIDAY</span><i></i><span>最大50%OFF</span><i></i><span>MONOLITH</span><i></i><span>お試しセット580円</span><i></i><span>BLACK FRIDAY</span><i></i><span>クーポン最大777円OFF</span><i></i>
+  </div></div>
+
+  <!-- FV -->
+  <section class="fv">
+    <p class="fv-kicker">MONOLITH 2026</p>
+    <h1 class="fv-title" aria-label="BLACK FRIDAY"><span class="l1">BLACK</span><span class="l2">FRIDAY</span></h1>
+    <p class="fv-catch">うちのこの<br class="sp-only">毎日のサプリを<br><em>いちばんおトクに</em></p>
+    <p class="fv-date">11.19<b>木</b>20:00 <span class="arr"></span> 11.25<b>水</b>1:59</p>
+    <div class="fv-photos">
+      <a href="https://item.rakuten.co.jp/cordy/cordyg30/"><img src="https://shop.r10s.jp/cordy/cabinet/item_img/sam/nml/cordyg30a2.jpg" alt="コルディ M／G"></a>
+      <a href="https://item.rakuten.co.jp/cordy/krilloil35/"><img src="https://shop.r10s.jp/cordy/cabinet/item_img/sam/nml/krilloil30sum2.jpg" alt="クリルオイル"></a>
+      <a href="https://item.rakuten.co.jp/cordy/aminofine25/"><img src="https://shop.r10s.jp/cordy/cabinet/item_img/sam/nml/aminofine25-sam.jpg" alt="アミノファイン"></a>
+      <a href="https://item.rakuten.co.jp/cordy/placenta5g/"><img src="https://shop.r10s.jp/cordy/cabinet/item_img/sam/nml/placenta-01-5.jpg" alt="プラセンタ12000"></a>
+    </div>
+    <div class="fv-3">
+      <a href="#half"><small>人もペットも</small><span class="big">50<u>%OFF</u></span></a>
+      <a href="#trial"><small>お試しセット</small><span class="big">580<u>円</u></span></a>
+      <a href="#coupon"><small>クーポン最大</small><span class="big t">777<u>円</u></span><small style="margin-top:4px">OFF</small></a>
+    </div>
+  </section>
+
+  <div class="cd" id="cd">
+    <p class="cd-lbl" data-cd-lbl>ブラックフライデー スタートまで</p>
+    <div class="cd-num" data-cd-num></div>
+  </div>
+
+  <!-- カレンダー -->
+  <section class="sec cal" id="calendar">
+    <div class="inner">
+      <p class="sec-no rv">CALENDAR</p>
+      <h2 class="h2 rv">20日と24日が<br>いちばんおトク</h2>
+      <p class="lead rv">セール価格は期間中ずっと。20日と24日〜25日1:59は、まとめ買い割引と店内ポイント5倍が重なります。</p>
+      <div class="cal-list" data-cal></div>
+      <div class="legend">
+        <span><span class="chip sale">セール</span> 期間中ずっと</span>
+        <span><span class="chip new">新規20%OFF</span> はじめての方</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 お試し -->
+  <section class="sec trial" id="trial">
+    <div class="inner">
+      <p class="sec-no rv">01 TRIAL SET</p>
+      <h2 class="h2 rv">はじめてのサプリは<br>4点ためして580円</h2>
+      <p class="lead rv">「うちのこ、飲んでくれるかな？」を先に確かめられる、ペット用サプリのお試しセット。</p>
+      <div class="trial-box">
+        <a class="trial-img" href="https://item.rakuten.co.jp/cordy/cordy-set/">
+          <img src="https://shop.r10s.jp/cordy/cabinet/item_img/sam/nml/trial-sum.jpg" alt="ペット用サプリお試し4点セット">
+        </a>
+        <div class="trial-price" style="position:relative">
+          <p class="was">通常<s>1,580円</s></p>
+          <p class="now">580<u>円</u></p>
+          <p class="tax">（税込）</p>
+          <div class="stamp" data-stamp aria-hidden="true"><i></i><div><b>1,000</b><small>円おトク</small></div></div>
+        </div>
+      </div>
+      <div class="trial-in">
+        <div>コルディ<small>3g</small></div>
+        <div>クリルオイル<small>6粒</small></div>
+        <div>プラセンタ<small>1g</small></div>
+        <div>アミノファイン<small>5g</small></div>
+      </div>
+      <div class="gift rv">
+        <span class="num">20<u>%</u></span>
+        <p>あとで使える20%OFFクーポンをプレゼント<small>お試しで気に入ったら、本品をおトクに。受け取り方・使える期間は商品ページでご案内します。</small></p>
+      </div>
+      <a class="btn" style="margin-top:22px" href="https://item.rakuten.co.jp/cordy/cordy-set/">580円のお試しセットを見る</a>
+    </div>
+  </section>
+
+  <!-- 02 クーポン -->
+  <section class="sec cp" id="coupon">
+    <div class="inner">
+      <p class="sec-no rv">02 COUPON</p>
+      <h2 class="h2 rv">クーポンは<br>先に取っておくのが正解</h2>
+
+      <div class="dash rv">
+        <div class="dash-top">
+          <div>
+            <p class="lbl">スタートダッシュクーポン</p>
+            <p class="when">11.19 20:00 START</p>
+          </div>
+          <div class="left">先着<b>100</b>枚</div>
+        </div>
+        <div class="big"><span>5,000円以上で</span><span class="num">10<u>%OFF</u></span></div>
+        <a class="btn off" href="#" data-coupon="dash">クーポンURL準備中</a>
+      </div>
+
+      <div class="tk-h"><h3>みんなのクーポン 4種</h3><b>最大777<u>円OFF</u></b></div>
+      <div class="tickets" data-tickets="all"></div>
+
+      <div class="tk-h"><h3>はじめての方へ</h3></div>
+      <div class="tickets">
+        <div class="tk wide">
+          <p class="cond">新規購入者さま限定　11/20・11/24・11/25のみ</p>
+          <p class="off">20<u>%OFF</u></p>
+          <hr><span class="get">クーポンURL準備中</span>
+        </div>
+      </div>
+
+      <div class="tk-h"><h3>いつもありがとうございます<br class="sp-only">リピーターさまクーポン 4種</h3></div>
+      <div class="tickets" data-tickets="rep"></div>
+      <div class="note"><p>※各クーポンの条件・枚数・期間は確定次第掲載します。</p></div>
+    </div>
+  </section>
+
+  <!-- 03 まとめ買い -->
+  <section class="sec stack" id="matome">
+    <div class="inner">
+      <p class="sec-no rv">03 BUY MORE</p>
+      <h2 class="h2 rv">買い置きするなら<br>この2日間</h2>
+      <p class="lead rv">毎日あげるサプリは、まとめて買うほどおトク。ポイントも5倍です。</p>
+      <div class="stack-days">
+        <div><span class="num">11.20</span><small>0:00〜23:59</small></div>
+        <div><span class="num">11.24</span><small>0:00〜<br class="sp-only">25日 1:59</small></div>
+      </div>
+      <div class="ladder">
+        <div><p class="cnt"><b>2</b>個以上で</p><p class="pct">5<u>%OFF</u></p></div>
+        <div><p class="cnt"><b>3</b>個以上で</p><p class="pct">10<u>%OFF</u></p></div>
+      </div>
+      <div class="p5"><p class="t">さらに<br>店内ポイント</p><p class="num">5<u>倍</u></p></div>
+    </div>
+  </section>
+
+  <!-- 04 スター商品 -->
+  <section class="sec star" id="star">
+    <div class="inner">
+      <p class="sec-no rv">04 STAR ITEMS</p>
+      <h2 class="h2 rv">いつものあの子の<br>定番サプリが</h2>
+      <div class="offbig rv"><span class="num">10<u>%OFF</u></span><p>期間中<br>ずっと</p></div>
+      <div data-star></div>
+    </div>
+  </section>
+
+  <!-- 05 50% -->
+  <section class="sec half" id="half">
+    <div class="inner">
+      <p class="sec-no rv">05 HALF PRICE</p>
+      <div class="half-head rv"><span class="num">50<u>%</u></span><p>OFF<br>半額です</p></div>
+      <p class="lead rv">ペットと暮らす人のためのサプリも、うちのこの納豆ふりかけも。期間中ずっと半額です。</p>
+      <div class="hgrid" data-half></div>
+    </div>
+  </section>
+
+  <!-- 06 メインサプリ -->
+  <section class="sec main" id="main">
+    <div class="inner">
+      <p class="sec-no rv">06 MAIN SUPPLEMENTS</p>
+      <h2 class="h2 rv">ほかのサプリも<br>10%OFF</h2>
+      <div class="mgrid" data-main></div>
+    </div>
+  </section>
+
+  <!-- 07 フード -->
+  <section class="sec food" id="food">
+    <div class="inner">
+      <p class="sec-no rv">07 FOOD</p>
+      <h2 class="h2 rv">ごはんも<br>いっしょにおトク</h2>
+      <div class="fgrid">
+        <a class="fb dbl" data-q="アカナ オリジン">
+          <div><p class="bn">ACANA・ORIJEN</p><p class="kn">アカナ・オリジン</p></div>
+          <p class="v">10<u>%OFF</u></p>
+        </a>
+        <a class="fb" data-q="ZIWI ジウィ">
+          <p class="bn">ZIWI</p><p class="kn">ジウィピーク</p>
+          <p class="v pt">10<u>倍</u></p><p class="kn">ポイント</p>
+          <span class="lk">ZIWIを見る</span>
+        </a>
+        <a class="fb" data-q="アニモンダ">
+          <p class="bn">animonda</p><p class="kn">アニモンダ</p>
+          <p class="v pt">5<u>倍</u></p><p class="kn">ポイント</p>
+          <span class="lk">アニモンダを見る</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="notes">
+    <div class="note">
+      <p>※セール・ポイント・クーポンの対象期間は 11/19(木)20:00〜11/25(水)1:59 のご注文です（日付指定のあるものを除く）。</p>
+      <p>※セール価格は通常価格から割引率で計算した目安です。最新の価格・在庫は各商品ページでご確認ください。</p>
+      <p>※価格は2026年11月13日時点の税込価格です。サイズ・お届け方法により価格が異なる商品があります。</p>
+      <p>※コルディ EX 100ml はセール対象外です。</p>
+      <p>※人用サプリメント（モノリス虫草カプセル・しあわせくりる・URUCO）は食品です。</p>
+    </div>
+  </div>
+
+  <div class="thanks" aria-hidden="true"><div class="run" data-dup><span>THANK YOU</span><i>FOR YOUR PETS</i></div></div>
+
+  <footer class="ft">
+    <p class="logo">MONOLITH</p>
+    <small>人とペットのサプリ専門店モノリス</small>
+    <a class="btn" href="https://www.rakuten.co.jp/cordy/">ショップトップへ</a>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var IMG='https://shop.r10s.jp/cordy/cabinet/item_img/sam/nml/';
+  var ITEM='https://item.rakuten.co.jp/cordy/';
+  var SID='370491';
+  var START=new Date('2026-11-19T20:00:00+09:00');
+  var END=new Date('2026-11-25T01:59:59+09:00');
+
+  /* 価格は2026-11-13時点の税込・最安価格 */
+  var STAR=[
+    {cat:'冬虫夏草',name:'コルディ M／G',tag:'日本産冬虫夏草の粉末。ごはんにふりかけるだけ',img:'cordyg30a2.jpg',url:'cordyg30',
+      sizes:[{l:'30g',p:6800,u:'cordyg30'},{l:'100g',p:21000,u:'cordyg100'}]},
+    {cat:'オメガ3',name:'クリルオイル',tag:'南極オキアミ由来のオメガ3。カプセルと液体から',img:'krilloil30sum2.jpg',url:'krilloil35',
+      sizes:[{l:'30粒',p:1650,u:'krilloil35'},{l:'180粒',p:6700,u:'krilloil180'},{l:'EX 液体',p:4200,u:'krilloil_ex'}]},
+    {cat:'アミノ酸',name:'アミノファイン',tag:'必須アミノ酸・BCAAを手軽にプラス',img:'aminofine25-sam.jpg',url:'aminofine25',
+      sizes:[{l:'25g',p:1800,u:'aminofine25'},{l:'100g',p:5400,u:'aminofine100'}]},
+    {cat:'プラセンタ',name:'プラセンタ12000',tag:'毎日の毛並みケアに',img:'placenta-01-5.jpg',url:'placenta5g',
+      sizes:[{l:'5g',p:1800,u:'placenta5g'},{l:'30g',p:7800,u:'placenta30g'}]}
+  ];
+  var HALF=[
+    {who:'人用',name:'しあわせくりる',tag:'機能性表示食品のクリルオイル',img:'shiawase-sam1.jpg',u:'krilloil_shiawase',p:3980},
+    {who:'人用',name:'モノリス<br>虫草カプセル',tag:'国産冬虫夏草のカプセル',img:'monolith10001_s01.jpg',u:'monolith10001',p:15500},
+    {who:'人用',name:'URUCO（ウルコ）',tag:'機能性表示食品の美容サプリ',img:'uruco-sum01.jpg',u:'uruco',p:5480},
+    {who:'ペット用',name:'わんにゃっとう 10g',tag:'納豆菌のふりかけサプリ',img:'wnyatt-sum.jpg',u:'wannyattou',p:4980}
+  ];
+  var MAIN=[
+    {name:'コルディ フローラ 30g',tag:'冬虫夏草×乳酸菌',img:'fl30_top1.jpg',u:'cordyfl30',p:8600,r:.1},
+    {name:'コルディ EX 100ml',tag:'液体タイプの冬虫夏草',img:'cordy_ex-sam1.jpg',u:'cordyex100',p:3600,r:0},
+    {name:'コルディカプセル<br>犬パッケージ 16粒',tag:'カプセルで試しやすい',img:'cap-dog-sam11.jpg',u:'cordycapsule-dog',p:1500,r:.1},
+    {name:'コルディカプセル<br>猫パッケージ 16粒',tag:'カプセルで試しやすい',img:'cap-cat-sam11.jpg',u:'cordycapsule-cat',p:1500,r:.1}
+  ];
+  /* クーポン（確定したら off と cond と url を入れる） */
+  var COUPON_ALL=[{cond:null,off:null},{cond:null,off:null},{cond:null,off:null},{cond:null,off:777}];
+  var COUPON_REP=[{cond:null,off:null},{cond:null,off:null},{cond:null,off:null},{cond:null,off:null}];
+  /* カレンダー */
+  var CAL=[
+    {d:19,w:'木',c:[['sd','20:00 スタートダッシュ'],['sale','セール開始']]},
+    {d:20,w:'金',best:1,c:[['sale','セール'],['new','新規20%OFF'],['mat','2個5%・3個10%OFF'],['pt','店内P5倍']]},
+    {d:21,w:'土',c:[['sale','セール']]},
+    {d:22,w:'日',c:[['sale','セール']]},
+    {d:23,w:'月',c:[['sale','セール']]},
+    {d:24,w:'火',best:1,c:[['sale','セール'],['new','新規20%OFF'],['mat','2個5%・3個10%OFF'],['pt','店内P5倍']]},
+    {d:25,w:'水',c:[['sale','1:59まで'],['new','新規20%OFF'],['mat','まとめ買い 1:59まで'],['pt','P5倍 1:59まで']]}
+  ];
+
+  function yen(n){return n.toLocaleString('ja-JP')}
+  function off(p,r){return Math.floor(p*(1-r))}
+  function el(sel){return document.querySelector(sel)}
+
+  el('[data-star]').innerHTML=STAR.map(function(s){
+    return '<article class="prod rv"><a class="prod-img" href="'+ITEM+s.url+'/"><img loading="lazy" src="'+IMG+s.img+'" alt="'+s.name+'"></a>'+
+      '<div><p class="cat">'+s.cat+'</p><h3>'+s.name+'</h3><p class="tag">'+s.tag+'</p></div><div class="sizes">'+
+      s.sizes.map(function(z){return '<a class="size" href="'+ITEM+z.u+'/"><span class="sz">'+z.l+'</span>'+
+        '<span class="pr"><s>'+yen(z.p)+'円〜</s><b>'+yen(off(z.p,.1))+'<u>円〜</u></b></span><span class="go"></span></a>'}).join('')+
+      '</div></article>';
+  }).join('');
+
+  el('[data-half]').innerHTML=HALF.map(function(h){
+    return '<a class="hcard rv" href="'+ITEM+h.u+'/"><div class="im"><img loading="lazy" src="'+IMG+h.img+'" alt="'+h.name+'"><span class="who'+(h.who==='人用'?' hu':'')+'">'+h.who+'</span></div>'+
+      '<div class="bd"><h3>'+h.name+'</h3><p class="tg">'+h.tag+'</p><p class="pr"><s>'+yen(h.p)+'円〜</s><b>'+yen(off(h.p,.5))+'<u>円〜</u></b></p><span class="cta">商品ページへ</span></div></a>';
+  }).join('');
+
+  el('[data-main]').innerHTML=MAIN.map(function(m){
+    var ns=!m.r;
+    return '<a class="hcard rv'+(ns?' ns':'')+'" href="'+ITEM+m.u+'/"><div class="im"><img loading="lazy" src="'+IMG+m.img+'" alt="'+m.name+'"><span class="pct">'+(ns?'いつもの価格':'10%OFF')+'</span></div>'+
+      '<div class="bd"><h3>'+m.name+'</h3><p class="tg">'+m.tag+'</p><p class="pr">'+(ns?'':'<s>'+yen(m.p)+'円〜</s>')+'<b>'+yen(off(m.p,m.r))+'<u>円〜</u></b></p><span class="cta">商品ページへ</span></div></a>';
+  }).join('');
+
+  function tickets(list){
+    return list.map(function(c){
+      var o=c.off?'<p class="off">'+yen(c.off)+'<u>円OFF</u></p>':'<p class="off tbd">近日公開</p>';
+      var cond=c.cond||'ご利用条件は近日公開';
+      var link=c.url?'<a href="'+c.url+'">クーポンを獲得する ›</a>':'<span class="get">クーポンURL準備中</span>';
+      return '<div class="tk"><p class="cond">'+cond+'</p>'+o+'<hr>'+link+'</div>';
+    }).join('');
+  }
+  el('[data-tickets="all"]').innerHTML=tickets(COUPON_ALL);
+  el('[data-tickets="rep"]').innerHTML=tickets(COUPON_REP);
+
+  document.querySelectorAll('[data-q]').forEach(function(a){
+    a.href='https://search.rakuten.co.jp/search/mall/'+encodeURIComponent(a.getAttribute('data-q'))+'/?sid='+SID;
+  });
+
+  /* calendar */
+  var now=new Date();
+  var jstDay=Number(new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Tokyo',day:'numeric'}).format(now));
+  var jstMon=Number(new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Tokyo',month:'numeric'}).format(now));
+  el('[data-cal]').innerHTML=CAL.map(function(c){
+    var isNow=(jstMon===11&&jstDay===c.d&&now>=new Date('2026-11-19T00:00:00+09:00')&&now<=END);
+    return '<div class="day'+(c.best?' best':'')+(isNow?' now':'')+'"><p class="d">11.'+c.d+'<small>'+c.w+'曜日</small></p><div class="chips">'+
+      c.c.map(function(x){return '<span class="chip '+x[0]+'">'+x[1]+'</span>'}).join('')+'</div>'+
+      (c.best?'<p class="best-tag">いちばんおトクな日</p>':'')+'</div>';
+  }).join('');
+
+  /* marquee duplicate */
+  document.querySelectorAll('[data-dup]').forEach(function(r){r.innerHTML=r.innerHTML+r.innerHTML});
+
+  /* countdown */
+  var lbl=el('[data-cd-lbl]'),box=el('[data-cd-num]'),mini=el('[data-cd-mini]');
+  function pad(n){return (n<10?'0':'')+n}
+  function tick(){
+    var t=new Date(),target,label;
+    if(t<START){target=START;label='ブラックフライデー スタートまで'}
+    else if(t<=END){target=END;label='ブラックフライデー 終了まで'}
+    else{lbl.textContent='ブラックフライデーは終了しました';box.innerHTML='';if(mini)mini.textContent='';return}
+    var s=Math.max(0,Math.floor((target-t)/1000));
+    var d=Math.floor(s/86400),h=Math.floor(s%86400/3600),m=Math.floor(s%3600/60),sec=s%60;
+    lbl.textContent=label;
+    box.innerHTML='<span class="num">'+d+'</span><small>日</small><span class="num">'+pad(h)+'</span><small>時間</small><span class="num">'+pad(m)+'</span><small>分</small><span class="num">'+pad(sec)+'</span><small>秒</small>';
+    if(mini)mini.textContent=label.replace('ブラックフライデー ','')+' '+d+'日'+pad(h)+'時間'+pad(m)+'分';
+  }
+  tick();setInterval(tick,1000);
+
+  /* reveal + stamp */
+  var stamp=el('[data-stamp]');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add(e.target===stamp?'on':'in');io.unobserve(e.target)}
+    })},{threshold:.2});
+    document.querySelectorAll('.rv').forEach(function(x){io.observe(x)});
+    io.observe(stamp);
+  }else{
+    document.querySelectorAll('.rv').forEach(function(x){x.classList.add('in')});stamp.classList.add('on');
+  }
+})();
+</script>
+</body>
+</html>
