@@ -148,17 +148,15 @@ a{color:inherit;text-decoration:none}
 
 /* ---- coupons ---- */
 .cp{background:var(--cream)}
-.dash{margin-top:16px;background:var(--ink);color:#fff;border-radius:18px;padding:18px 18px;position:relative;overflow:hidden}
-.dash-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
-.dash .lbl{font-size:17px;white-space:nowrap;font-weight:700;color:var(--butter);letter-spacing:.1em}
-.dash .when{font-family:var(--en);font-weight:600;font-size:min(6vw,28px);white-space:nowrap;letter-spacing:.02em;margin-top:2px}
-.dash .left{text-align:center;border:1px solid rgba(255,255,255,.4);border-radius:10px;padding:6px 10px;font-size:14px;line-height:1.3;font-weight:700;flex-shrink:0}
-.dash .left b{display:block;font-family:var(--en);font-size:26px;color:var(--butter)}
-.dash .big{display:flex;align-items:baseline;gap:10px;margin-top:6px;flex-wrap:wrap}
-.dash .big span{font-size:22px;font-weight:700}
-.dash .big .num{font-size:min(20vw,104px);color:var(--butter)}
-.dash .big .num u{text-decoration:none;font-size:.36em;font-family:var(--jp)}
-.dash .btn{margin-top:10px;background:var(--butter);color:var(--ink)}
+.dash{margin-top:16px;background:var(--ink);color:#fff;border-radius:18px;padding:16px 16px 16px;text-align:center}
+.dash .lbl{font-size:min(6vw,30px);font-weight:700;color:var(--butter);letter-spacing:.03em;line-height:1.3}
+.dash .when{display:flex;align-items:center;justify-content:center;gap:10px;font-family:var(--en);font-weight:600;font-size:min(6vw,34px);letter-spacing:.02em;line-height:1.2;margin-top:4px;white-space:nowrap}
+.dash .left{font-family:var(--jp);font-size:15px;font-weight:700;border:1.5px solid var(--butter);color:var(--butter);border-radius:8px;padding:2px 10px;line-height:1.4}
+.dash .left b{font-family:var(--en);font-size:24px;margin:0 2px}
+.dash .cond{font-size:min(5.6vw,26px);font-weight:700;margin-top:10px;line-height:1.3}
+.dash .num{font-size:min(40vw,230px);color:var(--butter);line-height:.82;letter-spacing:-.04em;margin-top:6px}
+.dash .num u{text-decoration:none;font-size:.3em;letter-spacing:0;margin-left:2px}
+.dash .btn{margin-top:14px;background:var(--butter);color:var(--ink);font-size:20px}
 .tickets{margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .tk{position:relative;background:var(--paper);border:1.5px solid var(--line);border-radius:12px;padding:16px 14px 14px;--hole:var(--cream)}
 .tk:before,.tk:after{content:"";position:absolute;top:58%;width:16px;height:16px;border-radius:50%;background:var(--hole);border:1.5px solid var(--line)}
@@ -314,6 +312,8 @@ a{color:inherit;text-decoration:none}
   .prod h3{font-size:24px}
   .tk-h h3{font-size:20px}
   .tk-h{flex-wrap:wrap}
+  .dash .left{font-size:13px;padding:1px 7px}
+  .dash .left b{font-size:19px}
   .ladder .cnt b{font-size:28px}
   .p5{flex-direction:column;gap:2px;text-align:center}
   .fb.dbl{flex-direction:column;align-items:flex-start}
@@ -442,14 +442,10 @@ a{color:inherit;text-decoration:none}
       <h2 class="h2 rv">クーポンは先に取っておこう</h2>
 
       <div class="dash rv">
-        <div class="dash-top">
-          <div>
-            <p class="lbl">スタートダッシュクーポン</p>
-            <p class="when">11.19 20:00 START</p>
-          </div>
-          <div class="left">先着<b>100</b>枚</div>
-        </div>
-        <div class="big"><span>5,000円以上で</span><span class="num">10<u>%OFF</u></span></div>
+        <p class="lbl">スタートダッシュクーポン</p>
+        <p class="when">11.19 20:00 START<span class="left">先着<b>100</b>枚</span></p>
+        <p class="cond">5,000円以上のお買い物で</p>
+        <p class="num">10<u>%OFF</u></p>
         <a class="btn off" href="#" data-coupon="dash">クーポンURL準備中</a>
       </div>
 
