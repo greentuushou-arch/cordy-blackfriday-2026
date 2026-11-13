@@ -169,6 +169,16 @@ a{color:inherit;text-decoration:none}
 .tk hr{border:0;border-top:1.5px dashed var(--line);margin:12px -4px 10px}
 .tk a,.tk span.get{display:block;text-align:center;font-size:15px;font-weight:700;color:var(--teal-d)}
 .tk span.get{color:#9c907f}
+.newc{margin-top:10px;background:var(--red);color:#fff;border-radius:18px;padding:14px 12px 14px;text-align:center}
+.newc .lbl{font-size:min(5.6vw,32px);font-weight:700;line-height:1.3;letter-spacing:0;white-space:nowrap}
+.newc .days{display:flex;justify-content:center;gap:6px;margin-top:8px}
+.newc .days span{background:#fff;color:var(--red);font-family:var(--en);font-weight:700;font-size:min(6.4vw,32px);line-height:1;padding:7px 10px 6px;border-radius:8px;white-space:nowrap}
+.newc .days small{font-family:var(--jp);font-size:.5em;margin-left:2px}
+.newc .num{font-size:min(34vw,230px);color:#fff;line-height:.82;letter-spacing:-.04em;margin-top:10px;white-space:nowrap}
+.newc .num u{text-decoration:none;font-size:.44em;letter-spacing:-.01em}
+.newc .sub{font-size:17px;font-weight:700;margin-top:8px}
+.newc .btn{margin-top:10px;background:#fff;color:var(--red);font-size:20px}
+.newc .btn.off{opacity:.85}
 .tk.wide{grid-column:1/-1;background:var(--salmon-l);border-color:transparent;--hole:var(--cream)}
 .tk.wide:before,.tk.wide:after{border-color:transparent}
 .tk-h{display:flex;align-items:baseline;justify-content:space-between;margin-top:16px;gap:8px;border-bottom:2px solid var(--ink);padding-bottom:4px}
@@ -451,17 +461,16 @@ a{color:inherit;text-decoration:none}
         <a class="btn off" href="#" data-coupon="dash">クーポンURL準備中</a>
       </div>
 
+      <div class="newc rv">
+        <p class="lbl">はじめてのお客さま限定クーポン</p>
+        <p class="days"><span>11.20<small>(金)</small></span><span>11.24<small>(火)</small></span><span>11.25<small>(水)</small></span></p>
+        <p class="num">20<u>%OFF</u></p>
+        <p class="sub">当店で初めてお買い物される方が対象</p>
+        <a class="btn off" href="#" data-coupon="new">クーポンURL準備中</a>
+      </div>
+
       <div class="tk-h"><h3>みんなのクーポン 4種</h3><b>最大777<u>円OFF</u></b></div>
       <div class="tickets" data-tickets="all"></div>
-
-      <div class="tk-h"><h3>はじめての方へ</h3></div>
-      <div class="tickets">
-        <div class="tk wide">
-          <p class="cond">新規購入者さま限定　11/20・11/24・11/25のみ</p>
-          <p class="off">20<u>%OFF</u></p>
-          <hr><span class="get">クーポンURL準備中</span>
-        </div>
-      </div>
 
       <div class="tk-h"><h3>リピーターさまクーポン 4種</h3></div>
       <div class="tickets" data-tickets="rep"></div>
