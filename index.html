@@ -251,7 +251,7 @@ a{color:inherit;text-decoration:none}
 .hcard .tg{font-size:15px;color:var(--ink);line-height:1.5;margin-top:2px}
 .hcard .pr{margin-top:auto;padding-top:6px;line-height:1.1}
 .hcard .pr s{font-family:var(--en);font-size:17px;color:var(--sub)}
-.hcard .pr b{display:block;font-family:var(--en);font-weight:700;color:var(--red);font-size:min(10vw,46px);letter-spacing:-.01em}
+.hcard .pr b{display:block;font-family:var(--en);font-weight:700;color:var(--red);font-size:min(8vw,46px);letter-spacing:-.01em}
 .hcard .pr b u{text-decoration:none;font-family:var(--jp);font-size:16px}
 .hcard .cta{margin-top:8px;background:var(--red);color:#fff;text-align:center;border-radius:999px;font-weight:700;font-size:17px;padding:9px 6px}
 
@@ -338,6 +338,61 @@ a{color:inherit;text-decoration:none}
 }
 @media (min-width:600px){.sp-only{display:none}}
 
+
+/* ---- 定期購入キャンペーン ---- */
+.fv-teiki{position:relative;display:block;text-align:center;margin-top:10px;background:var(--orange);color:var(--ink);border-radius:14px;padding:10px 40px 12px 14px;font-weight:700}
+.fv-teiki .k{font-size:min(4.4vw,24px);line-height:1.3;white-space:nowrap}
+.fv-teiki .v{font-family:var(--en);font-size:min(11vw,60px);line-height:1;color:#fff;white-space:nowrap;margin-top:4px}
+.fv-teiki .v u{text-decoration:none;font-family:var(--jp);font-size:.4em}
+.fv-teiki .v small{font-family:var(--jp);font-size:.3em;color:var(--ink);margin:0 4px}
+.fv-teiki .go{position:absolute;right:10px;top:50%;margin-top:-15px;width:30px;height:30px;border-radius:50%;background:var(--ink)}
+.fv-teiki .go:after{content:"";position:absolute;left:9px;top:11px;width:7px;height:7px;border-top:2px solid #fff;border-right:2px solid #fff;transform:rotate(45deg)}
+.teiki{background:var(--orange);color:var(--ink)}
+.teiki .sec-no{color:var(--ink)}
+.teiki .h2{font-size:min(8.4vw,52px)}
+.teiki .lead{color:var(--ink)}
+.tk-eq{margin-top:10px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:4px;text-align:center}
+.tk-eq .box{background:#fff;border-radius:16px;padding:10px 6px 12px}
+.tk-eq .box p{font-size:min(4vw,20px);font-weight:700;line-height:1.3}
+.tk-eq .box .num{font-size:min(12.6vw,96px);color:var(--red);margin-top:4px;white-space:nowrap}
+.tk-eq .box .num u{text-decoration:none;font-family:var(--jp);font-size:.38em}
+.tk-eq .box.c{background:var(--ink);color:#fff}
+.tk-eq .box.c .num{color:var(--butter)}
+.tk-eq .plus{font-family:var(--en);font-weight:700;font-size:min(8vw,54px);line-height:1}
+.tk-ex{margin-top:8px;background:#fff;border-radius:16px;padding:12px 14px;display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:center}
+.tk-ex img{width:96px;aspect-ratio:1/1;border-radius:7.6%}
+.tk-ex .t{font-size:16px;font-weight:700;line-height:1.35}
+.tk-ex .steps{display:flex;align-items:center;flex-wrap:wrap;gap:2px 8px;margin-top:4px;font-family:var(--en);font-weight:700;line-height:1.1}
+.tk-ex .steps s{font-size:18px;color:var(--sub)}
+.tk-ex .steps i{font-style:normal;font-size:16px;color:var(--sub)}
+.tk-ex .steps .m{font-size:22px;color:var(--ink)}
+.tk-ex .steps b{font-size:min(9vw,44px);color:var(--red);letter-spacing:-.01em}
+.tk-ex .steps u{text-decoration:none;font-family:var(--jp);font-size:14px}
+.tk-ex .lb{display:flex;gap:6px;margin-top:6px;font-size:13px;font-weight:700;color:var(--sub);flex-wrap:wrap}
+.tgrid{margin-top:8px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.tcard{background:#fff;border-radius:19px;padding:6px 6px 10px;display:flex;flex-direction:column;transition:transform .25s}
+.tcard:hover{transform:translateY(-3px)}
+.tcard img{width:100%;aspect-ratio:1/1;border-radius:7.6%}
+.tcard h3{font-size:16px;font-weight:700;line-height:1.35;margin:8px 4px 0}
+.tcard .pr{margin:auto 4px 0;padding-top:4px;line-height:1.1}
+.tcard .pr s{font-family:var(--en);font-size:15px;color:var(--sub)}
+.tcard .pr small{display:block;font-size:12.5px;font-weight:700;color:var(--teal-d);margin-top:2px}
+.tcard .pr b{display:block;font-family:var(--en);font-weight:700;color:var(--red);font-size:min(7.4vw,36px);letter-spacing:-.01em}
+.tcard .pr b u{text-decoration:none;font-family:var(--jp);font-size:14px}
+.teiki .btn{margin-top:10px;background:var(--ink);font-size:20px}
+.teiki .note{color:var(--ink)}
+/* ---- クーポン10%OFF(定番4商品) ---- */
+.star-cp{margin-top:8px;background:var(--red);color:#fff;font-size:20px}
+.size .pr small{display:block;font-size:12.5px;font-weight:700;color:var(--red)}
+/* ---- セール ---- */
+.half-head .num.sm{font-size:min(29vw,220px)}
+.hcard .pr b{white-space:nowrap}
+.hcard .pct{font-size:min(4.6vw,20px);top:auto;bottom:6px}
+@media (max-width:599px){
+  .tgrid{grid-template-columns:1fr 1fr}
+  .tk-ex{grid-template-columns:80px 1fr}
+  .tk-ex img{width:80px}
+}
 .lead,.h2,.tag,.tg,.gift p,.cond{word-break:auto-phrase}
 /* reveal */
 .rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
@@ -350,18 +405,18 @@ a{color:inherit;text-decoration:none}
 <!-- PC 両脇 -->
 <aside class="rail l" aria-label="ページ内メニュー">
   <nav>
+    <a href="#teiki">定期購入キャンペーン<span>NEW</span></a>
     <a href="#calendar">おトクカレンダー<span>CAL</span></a>
     <a href="#trial">お試しセット580円<span>01</span></a>
     <a href="#coupon">クーポン<span>02</span></a>
     <a href="#matome">まとめ買い・P5倍<span>03</span></a>
-    <a href="#star">スター商品10%OFF<span>04</span></a>
-    <a href="#half">50%OFF<span>05</span></a>
-    <a href="#main">メインサプリ10%OFF<span>06</span></a>
-    <a href="#food">フード<span>07</span></a>
+    <a href="#star">定番4商品10%OFF<span>04</span></a>
+    <a href="#sale">セール価格<span>05</span></a>
+    <a href="#food">フード<span>06</span></a>
   </nav>
 </aside>
 <aside class="rail r" aria-label="お試しセット">
-  <a class="mini" href="https://item.rakuten.co.jp/cordy/cordy-set/">
+  <a class="mini" href="https://www.rakuten.ne.jp/gold/cordy/campaign/index.html">
     <img src="https://shop.r10s.jp/cordy/cabinet/item_img/sam/nml/trial-sum.jpg" alt="ペット用サプリお試し4点セット">
     <b>580<u>円</u></b>
     <small>お試し4点セット</small>
@@ -378,7 +433,7 @@ a{color:inherit;text-decoration:none}
   </header>
 
   <div class="tape" aria-hidden="true"><div class="run" data-dup>
-    <span>BLACK FRIDAY</span><i></i><span>最大50%OFF</span><i></i><span>MONOLITH</span><i></i><span>お試しセット580円</span><i></i><span>BLACK FRIDAY</span><i></i><span>クーポン最大777円OFF</span><i></i>
+    <span>BLACK FRIDAY</span><i></i><span>最大50%OFF</span><i></i><span>MONOLITH</span><i></i><span>お試しセット580円</span><i></i><span>定期購入はじめませんか</span><i></i><span>BLACK FRIDAY</span><i></i><span>クーポン最大777円OFF</span><i></i>
   </div></div>
 
   <!-- FV -->
@@ -394,16 +449,46 @@ a{color:inherit;text-decoration:none}
       <a href="https://item.rakuten.co.jp/cordy/placenta5g/"><img src="https://shop.r10s.jp/cordy/cabinet/item_img/sam/nml/placenta-01-5.jpg" alt="プラセンタ12000"></a>
     </div>
     <div class="fv-3">
-      <a href="#half"><small>人もペットも</small><span class="big">50<u>%OFF</u></span></a>
+      <a href="#sale"><small>人もペットも</small><span class="big">50<u>%OFF</u></span></a>
       <a href="#trial"><small>お試しセット</small><span class="big">580<u>円</u></span></a>
       <a href="#coupon"><small>クーポン最大</small><span class="big t">777<u>円OFF</u></span></a>
     </div>
+    <a class="fv-teiki" href="#teiki">
+      <p class="k">定期購入はじめませんかキャンペーン</p>
+      <p class="v"><small>初回</small>10<u>%OFF</u><small>＋さらに</small>10<u>%OFF</u></p>
+      <span class="go"></span>
+    </a>
   </section>
 
   <div class="cd" id="cd">
     <p class="cd-lbl" data-cd-lbl>ブラックフライデー スタートまで</p>
     <div class="cd-num" data-cd-num></div>
   </div>
+
+  <!-- 定期購入キャンペーン -->
+  <section class="sec teiki" id="teiki">
+    <div class="inner">
+      <p class="sec-no rv">SUBSCRIPTION CAMPAIGN</p>
+      <h2 class="h2 rv">定期購入はじめませんか</h2>
+      <p class="lead rv">初回10%OFFの定期購入に、今回はさらに10%OFFクーポン。</p>
+      <div class="tk-eq rv">
+        <div class="box"><p>定期購入の初回</p><p class="num">10<u>%OFF</u></p></div>
+        <span class="plus">＋</span>
+        <div class="box c"><p>さらにクーポンで</p><p class="num">10<u>%OFF</u></p></div>
+      </div>
+      <div class="tk-ex rv">
+        <img src="https://shop.r10s.jp/cordy/cabinet/item_img/sam/nml/cordyg30a2.jpg" alt="コルディ M／G 30g">
+        <div>
+          <p class="t">たとえば コルディ M／G 30g</p>
+          <p class="steps"><s>6,800<u>円</u></s><i>→</i><span class="m">6,120<u>円</u></span><i>→</i><b>5,508<u>円</u></b></p>
+          <p class="lb"><span>通常価格</span><span>→ 定期初回</span><span>→ クーポン利用</span></p>
+        </div>
+      </div>
+      <div class="tgrid" data-teiki></div>
+      <a class="btn rv" href="https://coupon.rakuten.co.jp/getCoupon?getkey=TEJTUi1JVUs4LVdBQTctRUlKTA--&rd=&rt=https://search.rakuten.co.jp/search/mall/%E3%83%9A%E3%83%83%E3%83%88+%E3%82%B5%E3%83%97%E3%83%AA/?f=6&sid=370491">定期10%OFFクーポンを獲得</a>
+      <div class="note"><p>※クーポンは定期購入の初回お申し込み限定です。価格は通常価格・定期初回価格から計算した目安です。</p></div>
+    </div>
+  </section>
 
   <!-- カレンダー -->
   <section class="sec cal" id="calendar">
@@ -426,7 +511,7 @@ a{color:inherit;text-decoration:none}
       <h2 class="h2 rv">お試し4点セットが580円</h2>
       <p class="lead rv">「うちのこ、飲んでくれるかな？」を先に確かめられます。</p>
       <div class="trial-box">
-        <a class="trial-img" href="https://item.rakuten.co.jp/cordy/cordy-set/">
+        <a class="trial-img" href="https://www.rakuten.ne.jp/gold/cordy/campaign/index.html">
           <img src="https://shop.r10s.jp/cordy/cabinet/item_img/sam/nml/trial-sum.jpg" alt="ペット用サプリお試し4点セット">
         </a>
         <div class="trial-price" style="position:relative">
@@ -446,7 +531,7 @@ a{color:inherit;text-decoration:none}
         <span class="num">20<u>%</u></span>
         <p>あとで使える20%OFFクーポンをプレゼント<small>お試しで気に入ったら、本品をおトクに。受け取り方・使える期間は商品ページでご案内します。</small></p>
       </div>
-      <a class="btn" style="margin-top:10px" href="https://item.rakuten.co.jp/cordy/cordy-set/">580円のお試しセットを見る</a>
+      <a class="btn" style="margin-top:10px" href="https://www.rakuten.ne.jp/gold/cordy/campaign/index.html">580円のお試しセットを見る</a>
     </div>
   </section>
 
@@ -504,34 +589,27 @@ a{color:inherit;text-decoration:none}
     <div class="inner">
       <p class="sec-no rv">04 STAR ITEMS</p>
       <h2 class="h2 rv">いつもの定番サプリが</h2>
-      <div class="offbig rv"><span class="num">10<u>%OFF</u></span><p>期間中ずっと</p></div>
+      <div class="offbig rv"><span class="num">10<u>%OFF</u></span><p>クーポンで</p></div>
+      <a class="btn star-cp rv" href="https://coupon.rakuten.co.jp/getCoupon?getkey=UllaRC0yU0w3LTVZNFUtNFVESg--&rt=&rd=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%83%9A%E3%83%83%E3%83%88+%E3%82%B5%E3%83%97%E3%83%AA%2F%3Fsid%3D370491&l-id=shoptop_shopmenu_search_bar">定番10%OFFクーポンを獲得</a>
       <div data-star></div>
     </div>
   </section>
 
-  <!-- 05 50% -->
-  <section class="sec half" id="half">
+  <!-- 05 セール -->
+  <section class="sec half" id="sale">
     <div class="inner">
-      <p class="sec-no rv">05 HALF PRICE</p>
-      <div class="half-head rv"><span class="num">50<u>%OFF</u></span></div>
-      <p class="lead rv">人用サプリも納豆ふりかけも、期間中ずっと半額。</p>
-      <div class="hgrid" data-half></div>
-    </div>
-  </section>
-
-  <!-- 06 メインサプリ -->
-  <section class="sec main" id="main">
-    <div class="inner">
-      <p class="sec-no rv">06 MAIN SUPPLEMENTS</p>
-      <h2 class="h2 rv">ほかのサプリも10%OFF</h2>
-      <div class="mgrid" data-main></div>
+      <p class="sec-no rv">05 SALE</p>
+      <h2 class="h2 rv">セール価格でそのままおトク</h2>
+      <div class="half-head rv"><span class="num sm"><small style="font-family:var(--jp);font-size:.2em;letter-spacing:0;margin-right:.1em">最大</small>50<u>%OFF</u></span></div>
+      <p class="lead rv">クーポン不要。期間中ずっとこの価格です。</p>
+      <div class="hgrid" data-sale></div>
     </div>
   </section>
 
   <!-- 07 フード -->
   <section class="sec food" id="food">
     <div class="inner">
-      <p class="sec-no rv">07 FOOD</p>
+      <p class="sec-no rv">06 FOOD</p>
       <h2 class="h2 rv">ごはんもいっしょにおトク</h2>
       <div class="fgrid">
         <a class="fb dbl" data-q="アカナ オリジン">
@@ -557,8 +635,8 @@ a{color:inherit;text-decoration:none}
     <div class="note">
       <p>※セール・ポイント・クーポンの対象期間は 11/19(木)20:00〜11/25(水)1:59 のご注文です（日付指定のあるものを除く）。</p>
       <p>※セール価格は通常価格から割引率で計算した目安です。最新の価格・在庫は各商品ページでご確認ください。</p>
-      <p>※価格は2026年11月13日時点の税込価格です。サイズ・お届け方法により価格が異なる商品があります。</p>
-      <p>※コルディ EX 100ml はセール対象外です。</p>
+      <p>※価格は2026年11月16日時点の税込価格です。サイズ・お届け方法により価格が異なる商品があります。</p>
+      <p>※定番4商品の10%OFFはクーポンのご利用が必要です。セール価格の商品はクーポンなしでこの価格です。</p>
       <p>※人用サプリメント（モノリス虫草カプセル・しあわせくりる・URUCO）は食品です。</p>
     </div>
   </div>
@@ -580,7 +658,7 @@ a{color:inherit;text-decoration:none}
   var START=new Date('2026-11-19T20:00:00+09:00');
   var END=new Date('2026-11-25T01:59:59+09:00');
 
-  /* 価格は2026-11-13時点の税込・最安価格 */
+  /* 価格は2026-11-16時点の税込・最安価格 */
   var STAR=[
     {cat:'冬虫夏草',name:'コルディ M／G',tag:'日本産冬虫夏草の粉末。ごはんにふりかけるだけ',img:'cordyg30a2.jpg',url:'cordyg30',
       sizes:[{l:'30g',p:6800,u:'cordyg30'},{l:'100g',p:21000,u:'cordyg100'}]},
@@ -591,17 +669,25 @@ a{color:inherit;text-decoration:none}
     {cat:'プラセンタ',name:'プラセンタ12000',tag:'毎日の毛並みケアに',img:'placenta-01-5.jpg',url:'placenta5g',
       sizes:[{l:'5g',p:1800,u:'placenta5g'},{l:'30g',p:7800,u:'placenta30g'}]}
   ];
-  var HALF=[
-    {who:'人用',name:'しあわせくりる',tag:'機能性表示食品のクリルオイル',img:'shiawase-sam1.jpg',u:'krilloil_shiawase',p:3980},
-    {who:'人用',name:'モノリス<br>虫草カプセル',tag:'国産冬虫夏草のカプセル',img:'monolith10001_s01.jpg',u:'monolith10001',p:15500},
-    {who:'人用',name:'URUCO（ウルコ）',tag:'機能性表示食品の美容サプリ',img:'uruco-sum01.jpg',u:'uruco',p:5480},
-    {who:'ペット用',name:'わんにゃっとう 10g',tag:'納豆菌のふりかけサプリ',img:'wnyatt-sum.jpg',u:'wannyattou',p:4980}
+  /* セール値引き(クーポン不要)。off=割引率、yen=円引き */
+  var SALE=[
+    {who:'人用',name:'URUCO（ウルコ）',tag:'機能性表示食品の美容サプリ',img:'uruco-sum01.jpg',u:'uruco',p:5480,off:.5},
+    {who:'ペット用',name:'わんにゃっとう 10g',tag:'納豆菌のふりかけサプリ',img:'wnyatt-sum.jpg',u:'wannyattou',p:4980,off:.5},
+    {who:'ペット用品',name:'NanoAce',tag:'光触媒の消臭スプレー',img:'nanoace-sum01.jpg',u:'nanoace',p:3300,off:.5},
+    {who:'人用',name:'モノリス<br>虫草カプセル',tag:'国産冬虫夏草のカプセル',img:'monolith10001_s01.jpg',u:'monolith10001',p:15500,off:.35},
+    {who:'人用',name:'しあわせくりる',tag:'機能性表示食品のクリルオイル',img:'shiawase-sam1.jpg',u:'krilloil_shiawase',p:3980,off:.2},
+    {who:'ペット用',name:'納豆さらら姫',tag:'犬用の国産納豆',img:'nattosalala.jpg',u:'natto-sarara',p:4200,off:.1},
+    {who:'ペット用',name:'コルディカプセル<br>犬パッケージ',tag:'カプセルで試しやすい',img:'cap-dog-sam11.jpg',u:'cordycapsule-dog',p:1500,yen:300},
+    {who:'ペット用',name:'コルディカプセル<br>猫パッケージ',tag:'カプセルで試しやすい',img:'cap-cat-sam11.jpg',u:'cordycapsule-cat',p:1500,yen:300}
   ];
-  var MAIN=[
-    {name:'コルディ フローラ 30g',tag:'冬虫夏草×乳酸菌',img:'fl30_top1.jpg',u:'cordyfl30',p:8600,r:.1},
-    {name:'コルディ EX 100ml',tag:'液体タイプの冬虫夏草',img:'cordy_ex-sam1.jpg',u:'cordyex100',p:3600,r:0},
-    {name:'コルディカプセル<br>犬パッケージ 16粒',tag:'カプセルで試しやすい',img:'cap-dog-sam11.jpg',u:'cordycapsule-dog',p:1500,r:.1},
-    {name:'コルディカプセル<br>猫パッケージ 16粒',tag:'カプセルで試しやすい',img:'cap-cat-sam11.jpg',u:'cordycapsule-cat',p:1500,r:.1}
+  /* 定期購入: p=通常、f=定期初回(商品ページの定期初回価格) */
+  var TEIKI=[
+    {name:'コルディ M／G 30g',img:'cordyg30a2.jpg',u:'cordyg30',p:6800,f:6120},
+    {name:'クリルオイル 180粒',img:'krilloil180sum3.jpg',u:'krilloil180',p:6700,f:6030},
+    {name:'アミノファイン 100g',img:'aminofine100-sam.jpg',u:'aminofine100',p:5400,f:4860},
+    {name:'プラセンタ 30g',img:'placenta-01-30.jpg',u:'placenta30g',p:7800,f:7020},
+    {name:'コルディ フローラ 30g',img:'fl30_top1.jpg',u:'cordyfl30',p:8600,f:7740},
+    {name:'コルディ EX 100ml',img:'cordy_ex-sam1.jpg',u:'cordyex100',p:3600,f:3240}
   ];
   /* クーポン（確定したら off と cond と url を入れる） */
   var COUPON_ALL=[{cond:null,off:null},{cond:null,off:null},{cond:null,off:null},{cond:null,off:777}];
@@ -625,19 +711,20 @@ a{color:inherit;text-decoration:none}
     return '<article class="prod rv"><a class="prod-img" href="'+ITEM+s.url+'/"><img loading="lazy" src="'+IMG+s.img+'" alt="'+s.name+'"></a>'+
       '<div><p class="cat">'+s.cat+'</p><h3>'+s.name+'</h3><p class="tag">'+s.tag+'</p></div><div class="sizes">'+
       s.sizes.map(function(z){return '<a class="size" href="'+ITEM+z.u+'/"><span class="sz">'+z.l+'</span>'+
-        '<span class="pr"><s>'+yen(z.p)+'円〜</s><b>'+yen(off(z.p,.1))+'<u>円〜</u></b></span><span class="go"></span></a>'}).join('')+
+        '<span class="pr"><s>'+yen(z.p)+'円〜</s><small>クーポン利用で</small><b>'+yen(off(z.p,.1))+'<u>円〜</u></b></span><span class="go"></span></a>'}).join('')+
       '</div></article>';
   }).join('');
 
-  el('[data-half]').innerHTML=HALF.map(function(h){
-    return '<a class="hcard rv" href="'+ITEM+h.u+'/"><div class="im"><img loading="lazy" src="'+IMG+h.img+'" alt="'+h.name+'"><span class="who'+(h.who==='人用'?' hu':'')+'">'+h.who+'</span></div>'+
-      '<div class="bd"><h3>'+h.name+'</h3><p class="tg">'+h.tag+'</p><p class="pr"><s>'+yen(h.p)+'円〜</s><b>'+yen(off(h.p,.5))+'<u>円〜</u></b></p><span class="cta">商品ページへ</span></div></a>';
+  el('[data-sale]').innerHTML=SALE.map(function(h){
+    var now=h.yen?h.p-h.yen:off(h.p,h.off);
+    var badge=h.yen?yen(h.yen)+'円OFF':Math.round(h.off*100)+'%OFF';
+    return '<a class="hcard rv" href="'+ITEM+h.u+'/"><div class="im"><img loading="lazy" src="'+IMG+h.img+'" alt="'+h.name.replace('<br>','')+'"><span class="who'+(h.who==='人用'?' hu':'')+'">'+h.who+'</span><span class="pct">'+badge+'</span></div>'+
+      '<div class="bd"><h3>'+h.name+'</h3><p class="tg">'+h.tag+'</p><p class="pr"><s>'+yen(h.p)+'円〜</s><b>'+yen(now)+'<u>円〜</u></b></p><span class="cta">商品ページへ</span></div></a>';
   }).join('');
 
-  el('[data-main]').innerHTML=MAIN.map(function(m){
-    var ns=!m.r;
-    return '<a class="hcard rv'+(ns?' ns':'')+'" href="'+ITEM+m.u+'/"><div class="im"><img loading="lazy" src="'+IMG+m.img+'" alt="'+m.name+'"><span class="pct">'+(ns?'いつもの価格':'10%OFF')+'</span></div>'+
-      '<div class="bd"><h3>'+m.name+'</h3><p class="tg">'+m.tag+'</p><p class="pr">'+(ns?'':'<s>'+yen(m.p)+'円〜</s>')+'<b>'+yen(off(m.p,m.r))+'<u>円〜</u></b></p><span class="cta">商品ページへ</span></div></a>';
+  el('[data-teiki]').innerHTML=TEIKI.map(function(t){
+    return '<a class="tcard rv" href="'+ITEM+t.u+'/"><img loading="lazy" src="'+IMG+t.img+'" alt="'+t.name+'"><h3>'+t.name+'</h3>'+
+      '<p class="pr"><s>'+yen(t.p)+'円</s><small>定期初回＋クーポン</small><b>'+yen(off(t.f,.1))+'<u>円</u></b></p></a>';
   }).join('');
 
   function tickets(list){
