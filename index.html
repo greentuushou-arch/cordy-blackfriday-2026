@@ -349,7 +349,7 @@ a{color:inherit;text-decoration:none}
 .fv-teiki .go:after{content:"";position:absolute;left:9px;top:11px;width:7px;height:7px;border-top:2px solid #fff;border-right:2px solid #fff;transform:rotate(45deg)}
 .teiki{background:var(--orange);color:var(--ink)}
 .teiki .sec-no{color:var(--ink)}
-.teiki .h2{font-size:min(8.4vw,52px)}
+.teiki .h2{font-size:min(7.6vw,52px);line-height:1.3}
 .teiki .lead{color:var(--ink)}
 .tk-eq{margin-top:10px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:4px;text-align:center}
 .tk-eq .box{background:#fff;border-radius:16px;padding:10px 6px 12px}
@@ -381,6 +381,21 @@ a{color:inherit;text-decoration:none}
 .tcard .pr b u{text-decoration:none;font-family:var(--jp);font-size:14px}
 .teiki .btn{margin-top:10px;background:var(--ink);font-size:20px}
 .teiki .note{color:var(--ink)}
+
+/* ---- BF限定の特別感 ---- */
+.teiki{padding-top:0}
+.bf-only{background:var(--ink);color:#fff;text-align:center;padding:14px 14px 12px;margin:0 -14px 14px;position:relative;overflow:hidden}
+.bf-only:before,.bf-only:after{content:"";position:absolute;left:0;right:0;height:6px;background:repeating-linear-gradient(90deg,var(--butter) 0 18px,transparent 18px 30px)}
+.bf-only:before{top:0}
+.bf-only:after{bottom:0}
+.bf-only .en{display:block;font-family:var(--en);font-weight:700;color:var(--butter);font-size:min(12vw,72px);line-height:1;letter-spacing:.01em;margin-top:4px;white-space:nowrap}
+.bf-only .jp{display:block;font-size:min(7.4vw,44px);font-weight:700;line-height:1.25;white-space:nowrap}
+.bf-only .jp em{font-style:normal;color:var(--butter)}
+.bf-only .dl{display:inline-flex;align-items:center;gap:10px;margin-top:8px;font-size:min(4.6vw,22px);font-weight:700;white-space:nowrap}
+.bf-only .dl b{background:var(--red);color:#fff;border-radius:6px;padding:2px 10px;font-size:.9em}
+.bf-only .cdt{display:block;font-family:var(--en);font-weight:600;font-size:min(4.6vw,22px);color:#e9e3da;margin:4px 0 4px}
+.teiki .h2 em{font-style:normal;background:var(--red);color:#fff;padding:0 .2em;margin-right:.15em;border-radius:6px}
+.fv-teiki .k b{display:table;margin:0 auto 4px;background:var(--ink);color:var(--butter);border-radius:6px;padding:1px 10px;font-family:var(--en);letter-spacing:.02em}
 /* ---- クーポン10%OFF(定番4商品) ---- */
 .star-cp{margin-top:8px;background:var(--red);color:#fff;font-size:20px}
 .size .pr small{display:block;font-size:12.5px;font-weight:700;color:var(--red)}
@@ -453,7 +468,7 @@ a{color:inherit;text-decoration:none}
       <a href="#star"><small>定番サプリ</small><span class="big t">10<u>%OFF</u></span></a>
     </div>
     <a class="fv-teiki" href="#teiki">
-      <p class="k">定期購入はじめませんかキャンペーン</p>
+      <p class="k"><b>BLACK FRIDAY限定</b>定期購入キャンペーン</p>
       <p class="v"><small>初回</small>10<u>%OFF</u><small>＋さらに</small>10<u>%OFF</u></p>
       <span class="go"></span>
     </a>
@@ -467,13 +482,19 @@ a{color:inherit;text-decoration:none}
   <!-- 定期購入キャンペーン -->
   <section class="sec teiki" id="teiki">
     <div class="inner">
+      <div class="bf-only">
+        <span class="en">BLACK FRIDAY</span>
+        <span class="jp"><em>限定</em>キャンペーン！！</span>
+        <span class="dl"><b>今だけ</b>11.25(水) 1:59まで</span>
+        <span class="cdt" data-cd-teiki></span>
+      </div>
       <p class="sec-no rv">SUBSCRIPTION CAMPAIGN</p>
-      <h2 class="h2 rv">定期購入はじめませんか</h2>
-      <p class="lead rv">初回10%OFFの定期購入に、今回はさらに10%OFFクーポン。</p>
+      <h2 class="h2 rv"><em>今だけ</em><br>定期購入はじめませんか</h2>
+      <p class="lead rv">定期初回の10%OFFに、ブラックフライデーの間だけ10%OFFクーポンが重ねられます。</p>
       <div class="tk-eq rv">
         <div class="box"><p>定期購入の初回</p><p class="num">10<u>%OFF</u></p></div>
         <span class="plus">＋</span>
-        <div class="box c"><p>さらにクーポンで</p><p class="num">10<u>%OFF</u></p></div>
+        <div class="box c"><p>BF限定クーポンで</p><p class="num">10<u>%OFF</u></p></div>
       </div>
       <div class="tk-ex rv">
         <img src="https://shop.r10s.jp/cordy/cabinet/item_img/sam/nml/cordyg30a2.jpg" alt="コルディ M／G 30g">
@@ -484,8 +505,8 @@ a{color:inherit;text-decoration:none}
         </div>
       </div>
       <div class="tgrid" data-teiki></div>
-      <a class="btn rv" href="https://coupon.rakuten.co.jp/getCoupon?getkey=TEJTUi1JVUs4LVdBQTctRUlKTA--&rd=&rt=https://search.rakuten.co.jp/search/mall/%E3%83%9A%E3%83%83%E3%83%88+%E3%82%B5%E3%83%97%E3%83%AA/?f=6&sid=370491">定期10%OFFクーポンを獲得</a>
-      <div class="note"><p>※クーポンは定期購入の初回お申し込み限定です。価格は通常価格・定期初回価格から計算した目安です。</p></div>
+      <a class="btn rv" href="https://coupon.rakuten.co.jp/getCoupon?getkey=TEJTUi1JVUs4LVdBQTctRUlKTA--&rd=&rt=https://search.rakuten.co.jp/search/mall/%E3%83%9A%E3%83%83%E3%83%88+%E3%82%B5%E3%83%97%E3%83%AA/?f=6&sid=370491">BF限定 定期10%OFFクーポンを獲得</a>
+      <div class="note"><p>※ブラックフライデー期間限定のクーポンです。定期購入の初回お申し込みのみ対象です。価格は通常価格・定期初回価格から計算した目安です。</p></div>
     </div>
   </section>
 
@@ -722,18 +743,19 @@ a{color:inherit;text-decoration:none}
   document.querySelectorAll('[data-dup]').forEach(function(r){r.innerHTML=r.innerHTML+r.innerHTML});
 
   /* countdown */
-  var lbl=el('[data-cd-lbl]'),box=el('[data-cd-num]'),mini=el('[data-cd-mini]');
+  var lbl=el('[data-cd-lbl]'),box=el('[data-cd-num]'),mini=el('[data-cd-mini]'),tk=el('[data-cd-teiki]');
   function pad(n){return (n<10?'0':'')+n}
   function tick(){
     var t=new Date(),target,label;
     if(t<START){target=START;label='ブラックフライデー スタートまで'}
     else if(t<=END){target=END;label='ブラックフライデー 終了まで'}
-    else{lbl.textContent='ブラックフライデーは終了しました';box.innerHTML='';if(mini)mini.textContent='';return}
+    else{lbl.textContent='ブラックフライデーは終了しました';box.innerHTML='';if(mini)mini.textContent='';if(tk)tk.textContent='キャンペーンは終了しました';return}
     var s=Math.max(0,Math.floor((target-t)/1000));
     var d=Math.floor(s/86400),h=Math.floor(s%86400/3600),m=Math.floor(s%3600/60),sec=s%60;
     lbl.textContent=label;
     box.innerHTML='<span class="num">'+d+'</span><small>日</small><span class="num">'+pad(h)+'</span><small>時間</small><span class="num">'+pad(m)+'</span><small>分</small><span class="num">'+pad(sec)+'</span><small>秒</small>';
     if(mini)mini.textContent=label.replace('ブラックフライデー ','')+' '+d+'日'+pad(h)+'時間'+pad(m)+'分';
+    if(tk)tk.textContent=(t<START?'スタートまで ':'終了まで ')+d+'日 '+pad(h)+'時間 '+pad(m)+'分 '+pad(sec)+'秒';
   }
   tick();setInterval(tick,1000);
 
