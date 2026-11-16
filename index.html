@@ -424,7 +424,7 @@ a{color:inherit;text-decoration:none}
 </aside>
 
 <div class="page" id="top">
-  <div class="draft">確認用ページです（クーポン条件・URLは仮）</div>
+  <div class="draft">確認用ページです</div>
 
   <header class="hd">
     <div><span class="logo">MONOLITH</span><small>人とペットのサプリ専門店モノリス</small></div>
@@ -432,7 +432,7 @@ a{color:inherit;text-decoration:none}
   </header>
 
   <div class="tape" aria-hidden="true"><div class="run" data-dup>
-    <span>BLACK FRIDAY</span><i></i><span>最大50%OFF</span><i></i><span>MONOLITH</span><i></i><span>お試しセット580円</span><i></i><span>定期購入はじめませんか</span><i></i><span>BLACK FRIDAY</span><i></i><span>クーポン最大777円OFF</span><i></i>
+    <span>BLACK FRIDAY</span><i></i><span>最大50%OFF</span><i></i><span>MONOLITH</span><i></i><span>お試しセット580円</span><i></i><span>定期購入はじめませんか</span><i></i><span>BLACK FRIDAY</span><i></i><span>定番サプリ10%OFFクーポン</span><i></i>
   </div></div>
 
   <!-- FV -->
@@ -450,7 +450,7 @@ a{color:inherit;text-decoration:none}
     <div class="fv-3">
       <a href="#sale"><small>人もペットも</small><span class="big">50<u>%OFF</u></span></a>
       <a href="#trial"><small>お試しセット</small><span class="big">580<u>円</u></span></a>
-      <a href="#coupon"><small>クーポン最大</small><span class="big t">777<u>円OFF</u></span></a>
+      <a href="#star"><small>定番サプリ</small><span class="big t">10<u>%OFF</u></span></a>
     </div>
     <a class="fv-teiki" href="#teiki">
       <p class="k">定期購入はじめませんかキャンペーン</p>
@@ -548,12 +548,6 @@ a{color:inherit;text-decoration:none}
         <a class="btn off" href="#" data-coupon="new">クーポンURL準備中</a>
       </div>
 
-      <div class="tk-h"><h3>みんなのクーポン 4種</h3><b>最大777<u>円OFF</u></b></div>
-      <div class="tickets" data-tickets="all"></div>
-
-      <div class="tk-h"><h3>リピーターさまクーポン 4種</h3></div>
-      <div class="tickets" data-tickets="rep"></div>
-      <div class="note"><p>※各クーポンの条件・枚数・期間は確定次第掲載します。</p></div>
     </div>
   </section>
 
@@ -708,8 +702,6 @@ a{color:inherit;text-decoration:none}
       return '<div class="tk"><p class="cond">'+cond+'</p>'+o+'<hr>'+link+'</div>';
     }).join('');
   }
-  el('[data-tickets="all"]').innerHTML=tickets(COUPON_ALL);
-  el('[data-tickets="rep"]').innerHTML=tickets(COUPON_REP);
 
   document.querySelectorAll('[data-q]').forEach(function(a){
     a.href='https://search.rakuten.co.jp/search/mall/'+encodeURIComponent(a.getAttribute('data-q'))+'/?sid='+SID;
