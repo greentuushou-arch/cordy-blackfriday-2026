@@ -409,10 +409,9 @@ a{color:inherit;text-decoration:none}
     <a href="#calendar">おトクカレンダー<span>CAL</span></a>
     <a href="#trial">お試しセット580円<span>01</span></a>
     <a href="#coupon">クーポン<span>02</span></a>
-    <a href="#matome">まとめ買い・P5倍<span>03</span></a>
-    <a href="#star">定番4商品10%OFF<span>04</span></a>
-    <a href="#sale">セール価格<span>05</span></a>
-    <a href="#food">フード<span>06</span></a>
+    <a href="#star">定番4商品10%OFF<span>03</span></a>
+    <a href="#sale">セール価格<span>04</span></a>
+    <a href="#food">フード<span>05</span></a>
   </nav>
 </aside>
 <aside class="rail r" aria-label="お試しセット">
@@ -495,7 +494,7 @@ a{color:inherit;text-decoration:none}
     <div class="inner">
       <p class="sec-no rv">CALENDAR</p>
       <h2 class="h2 rv">20日と24日がいちばんおトク</h2>
-      <p class="lead rv">まとめ買い割引とポイント5倍が重なる2日間です。</p>
+      <p class="lead rv">新規20%OFFと店内ポイント5倍が重なる日</p>
       <div class="cal-list" data-cal></div>
       <div class="legend">
         <span><span class="chip sale">セール</span> 期間中ずっと</span>
@@ -566,28 +565,10 @@ a{color:inherit;text-decoration:none}
     </div>
   </section>
 
-  <!-- 03 まとめ買い -->
-  <section class="sec stack" id="matome">
-    <div class="inner">
-      <p class="sec-no rv">03 BUY MORE</p>
-      <h2 class="h2 rv">買い置きは20日と24日に</h2>
-      <p class="lead rv">まとめて買うほどおトクになります。</p>
-      <div class="stack-days">
-        <div><span class="num">11.20</span><small>0:00〜23:59</small></div>
-        <div><span class="num">11.24</span><small>0:00〜25日1:59</small></div>
-      </div>
-      <div class="ladder">
-        <div><p class="cnt"><b>2</b>個以上で</p><p class="pct">5<u>%OFF</u></p></div>
-        <div><p class="cnt"><b>3</b>個以上で</p><p class="pct">10<u>%OFF</u></p></div>
-      </div>
-      <div class="p5"><p class="t">さらに店内ポイント</p><p class="num">5<u>倍</u></p></div>
-    </div>
-  </section>
-
   <!-- 04 スター商品 -->
   <section class="sec star" id="star">
     <div class="inner">
-      <p class="sec-no rv">04 STAR ITEMS</p>
+      <p class="sec-no rv">03 STAR ITEMS</p>
       <h2 class="h2 rv">いつもの定番サプリが</h2>
       <div class="offbig rv"><span class="num">10<u>%OFF</u></span><p>クーポンで</p></div>
       <a class="btn star-cp rv" href="https://coupon.rakuten.co.jp/getCoupon?getkey=UllaRC0yU0w3LTVZNFUtNFVESg--&rt=&rd=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%83%9A%E3%83%83%E3%83%88+%E3%82%B5%E3%83%97%E3%83%AA%2F%3Fsid%3D370491&l-id=shoptop_shopmenu_search_bar">定番10%OFFクーポンを獲得</a>
@@ -598,7 +579,7 @@ a{color:inherit;text-decoration:none}
   <!-- 05 セール -->
   <section class="sec half" id="sale">
     <div class="inner">
-      <p class="sec-no rv">05 SALE</p>
+      <p class="sec-no rv">04 SALE</p>
       <h2 class="h2 rv">セール価格でそのままおトク</h2>
       <div class="half-head rv"><span class="num sm"><small style="font-family:var(--jp);font-size:.2em;letter-spacing:0;margin-right:.1em">最大</small>50<u>%OFF</u></span></div>
       <p class="lead rv">クーポン不要。期間中ずっとこの価格です。</p>
@@ -609,7 +590,7 @@ a{color:inherit;text-decoration:none}
   <!-- 07 フード -->
   <section class="sec food" id="food">
     <div class="inner">
-      <p class="sec-no rv">06 FOOD</p>
+      <p class="sec-no rv">05 FOOD</p>
       <h2 class="h2 rv">ごはんもいっしょにおトク</h2>
       <div class="fgrid">
         <a class="fb dbl" data-q="アカナ オリジン">
@@ -695,12 +676,12 @@ a{color:inherit;text-decoration:none}
   /* カレンダー */
   var CAL=[
     {d:19,w:'木',c:[['sd','20:00 スタートダッシュ'],['sale','セール開始']]},
-    {d:20,w:'金',best:1,c:[['sale','セール'],['new','新規20%OFF'],['mat','2個5%・3個10%OFF'],['pt','店内P5倍']]},
+    {d:20,w:'金',best:1,c:[['sale','セール'],['new','新規20%OFF'],['pt','店内P5倍']]},
     {d:21,w:'土',c:[['sale','セール']]},
     {d:22,w:'日',c:[['sale','セール']]},
     {d:23,w:'月',c:[['sale','セール']]},
-    {d:24,w:'火',best:1,c:[['sale','セール'],['new','新規20%OFF'],['mat','2個5%・3個10%OFF'],['pt','店内P5倍']]},
-    {d:25,w:'水',c:[['sale','1:59まで'],['new','新規20%OFF'],['mat','まとめ買い 1:59まで'],['pt','P5倍 1:59まで']]}
+    {d:24,w:'火',best:1,c:[['sale','セール'],['new','新規20%OFF'],['pt','店内P5倍']]},
+    {d:25,w:'水',c:[['sale','1:59まで'],['new','新規20%OFF'],['pt','P5倍 1:59まで']]}
   ];
 
   function yen(n){return n.toLocaleString('ja-JP')}
