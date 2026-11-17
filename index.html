@@ -178,7 +178,10 @@ a{color:inherit;text-decoration:none}
 .newc .num u{text-decoration:none;font-size:.44em;letter-spacing:-.01em}
 .newc .sub{font-size:17px;font-weight:700;margin-top:8px}
 .newc .btn{margin-top:10px;background:#fff;color:var(--red);font-size:20px}
-.newc .btn.off{opacity:.85}
+.newc .days span{font-family:var(--jp);font-size:min(6vw,30px);padding:6px 18px}
+.newc .period{font-family:var(--en);font-weight:600;font-size:min(5.4vw,28px);margin-top:6px;white-space:nowrap}
+.newc .period small{font-family:var(--jp);font-size:.6em;margin:0 .15em}
+.newc .btn:after{border-color:var(--red)}
 .tk.wide{grid-column:1/-1;background:var(--salmon-l);border-color:transparent;--hole:var(--cream)}
 .tk.wide:before,.tk.wide:after{border-color:transparent}
 .tk-h{display:flex;align-items:baseline;justify-content:space-between;margin-top:16px;gap:8px;border-bottom:2px solid var(--ink);padding-bottom:4px}
@@ -515,11 +518,11 @@ a{color:inherit;text-decoration:none}
     <div class="inner">
       <p class="sec-no rv">CALENDAR</p>
       <h2 class="h2 rv">20日と24日がいちばんおトク</h2>
-      <p class="lead rv">新規20%OFFと店内ポイント5倍が重なる日</p>
+      <p class="lead rv">20日と24日は店内ポイント5倍も重なります</p>
       <div class="cal-list" data-cal></div>
       <div class="legend">
         <span><span class="chip sale">セール</span> 期間中ずっと</span>
-        <span><span class="chip new">新規20%OFF</span> はじめての方</span>
+        <span><span class="chip new">新規20%OFF</span> はじめての方・期間中ずっと</span>
       </div>
     </div>
   </section>
@@ -562,10 +565,11 @@ a{color:inherit;text-decoration:none}
 
       <div class="newc rv">
         <p class="lbl">はじめてのお客さま限定クーポン</p>
-        <p class="days"><span>11.20<small>(金)</small></span><span>11.24<small>(火)</small></span><span>11.25<small>(水)</small></span></p>
+        <p class="days"><span>期間中ずっと</span></p>
+        <p class="period">11.19<small>(木)</small>20:00 → 11.25<small>(水)</small>1:59</p>
         <p class="num">20<u>%OFF</u></p>
         <p class="sub">当店で初めてお買い物される方が対象</p>
-        <a class="btn off" href="#" data-coupon="new">クーポンURL準備中</a>
+        <a class="btn" href="https://coupon.rakuten.co.jp/getCoupon?getkey=UU1NQy1GMlFHLTZQTE0tUFZUUQ--&rt=">新規20%OFFクーポンを獲得</a>
       </div>
 
     </div>
@@ -681,13 +685,13 @@ a{color:inherit;text-decoration:none}
   var COUPON_REP=[{cond:null,off:null},{cond:null,off:null},{cond:null,off:null},{cond:null,off:null}];
   /* カレンダー */
   var CAL=[
-    {d:19,w:'木',c:[['sale','20:00 セール開始']]},
+    {d:19,w:'木',c:[['sale','20:00 セール開始'],['new','新規20%OFF']]},
     {d:20,w:'金',best:1,c:[['sale','セール'],['new','新規20%OFF'],['pt','店内P5倍']]},
-    {d:21,w:'土',c:[['sale','セール']]},
-    {d:22,w:'日',c:[['sale','セール']]},
-    {d:23,w:'月',c:[['sale','セール']]},
+    {d:21,w:'土',c:[['sale','セール'],['new','新規20%OFF']]},
+    {d:22,w:'日',c:[['sale','セール'],['new','新規20%OFF']]},
+    {d:23,w:'月',c:[['sale','セール'],['new','新規20%OFF']]},
     {d:24,w:'火',best:1,c:[['sale','セール'],['new','新規20%OFF'],['pt','店内P5倍']]},
-    {d:25,w:'水',c:[['sale','1:59まで'],['new','新規20%OFF'],['pt','P5倍 1:59まで']]}
+    {d:25,w:'水',c:[['sale','1:59まで'],['new','新規 1:59まで'],['pt','P5倍 1:59まで']]}
   ];
 
   function yen(n){return n.toLocaleString('ja-JP')}
