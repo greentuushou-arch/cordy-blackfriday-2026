@@ -392,7 +392,7 @@ a{color:inherit;text-decoration:none}
 .tcard .pr small{display:block;font-size:12.5px;font-weight:700;color:var(--teal-d);margin-top:2px}
 .tcard .pr b{display:block;font-family:var(--en);font-weight:700;color:var(--red);font-size:min(7.4vw,36px);letter-spacing:-.01em}
 .tcard .pr b u{text-decoration:none;font-family:var(--jp);font-size:14px}
-.teiki .btn{margin-top:10px;background:var(--ink);font-size:20px}
+.teiki .btn{margin-top:10px;background:var(--ink);font-size:min(4.6vw,20px);white-space:nowrap}
 .teiki .note{color:var(--ink)}
 
 /* ---- BF限定の特別感 ---- */
@@ -690,10 +690,15 @@ a{color:inherit;text-decoration:none}
   /* 定期購入: p=通常、f=定期初回(商品ページの定期初回価格) */
   var TEIKI=[
     {name:'コルディ M／G 30g',img:'cordyg30a2.jpg',u:'cordyg30',p:6800,f:6120},
+    {name:'コルディ M／G 100g',img:'cordyg100a2.jpg',u:'cordyg100',p:21000,f:18900},
+    {name:'クリルオイル 30粒',img:'krilloil30sum2.jpg',u:'krilloil35',p:1650,f:1485},
     {name:'クリルオイル 180粒',img:'krilloil180sum3.jpg',u:'krilloil180',p:6700,f:6030},
+    {name:'アミノファイン 25g',img:'aminofine25-sam.jpg',u:'aminofine25',p:1800,f:1620},
     {name:'アミノファイン 100g',img:'aminofine100-sam.jpg',u:'aminofine100',p:5400,f:4860},
+    {name:'プラセンタ 5g',img:'placenta-01-5.jpg',u:'placenta5g',p:1800,f:1620},
     {name:'プラセンタ 30g',img:'placenta-01-30.jpg',u:'placenta30g',p:7800,f:7020},
     {name:'コルディ フローラ 30g',img:'fl30_top1.jpg',u:'cordyfl30',p:8600,f:7740},
+    {name:'コルディ フローラ 100g',img:'fl100_top1.jpg',u:'cordyfl100',p:25100,f:22590},
     {name:'コルディ EX 100ml',img:'cordy_ex-sam1.jpg',u:'cordyex100',p:3600,f:3240}
   ];
   /* クーポン（確定したら off と cond と url を入れる） */
