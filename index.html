@@ -308,6 +308,13 @@ a{color:inherit;text-decoration:none}
   .rail .mini b{display:block;color:var(--red);font-family:var(--en);font-size:44px;line-height:1;margin-top:8px}
   .rail .mini b u{text-decoration:none;font-family:var(--jp);font-size:14px}
   .rail .mini small{font-size:13px;font-weight:700}
+  .rail .mini-new{display:grid;grid-template-columns:46px 1fr;grid-template-rows:auto auto auto;column-gap:10px;align-items:center;margin-top:10px;background:var(--red);color:#fff;border-radius:16px;padding:12px 14px;transition:filter .2s}
+  .rail .mini-new:hover{filter:brightness(1.08)}
+  .rail .mini-new .wk{grid-row:1/3;width:46px;height:auto;filter:drop-shadow(0 0 0 #fff)}
+  .rail .mini-new .t{font-size:15px;font-weight:700;line-height:1.2}
+  .rail .mini-new b{font-family:var(--en);font-size:40px;line-height:1;letter-spacing:-.01em}
+  .rail .mini-new b u{text-decoration:none;font-size:.42em}
+  .rail .mini-new small{grid-column:1/-1;margin-top:8px;background:#fff;color:var(--red);border-radius:999px;text-align:center;font-size:14px;font-weight:700;padding:5px 0}
   .rail .rcd{margin-top:14px;text-align:center;font-size:13px;font-weight:700;color:var(--teal-d)}
 }
 
@@ -433,11 +440,17 @@ a{color:inherit;text-decoration:none}
     <a href="#food">フード<span>05</span></a>
   </nav>
 </aside>
-<aside class="rail r" aria-label="お試しセット">
+<aside class="rail r" aria-label="お試しセットと新規クーポン">
   <a class="mini" href="https://www.rakuten.ne.jp/gold/cordy/campaign/index.html">
     <img src="https://shop.r10s.jp/cordy/cabinet/item_img/sam/nml/trial-sum.jpg" alt="ペット用サプリお試し4点セット">
     <b>580<u>円</u></b>
     <small>お試し4点セット</small>
+  </a>
+  <a class="mini-new" href="https://coupon.rakuten.co.jp/getCoupon?getkey=UU1NQy1GMlFHLTZQTE0tUFZUUQ--&rt=">
+    <svg class="wk" viewBox="0 0 100 110" aria-hidden="true"><path d="M50 18 L4 2 L4 72 L50 106 Z" fill="#f6d21c" stroke="#fff" stroke-width="5" stroke-linejoin="round"/><path d="M50 18 L96 2 L96 72 L50 106 Z" fill="#1f9a4a" stroke="#fff" stroke-width="5" stroke-linejoin="round"/></svg>
+    <span class="t">新規の方限定</span>
+    <b>20<u>%OFF</u></b>
+    <small>クーポンを獲得 ›</small>
   </a>
   <p class="rcd" data-cd-mini></p>
 </aside>
